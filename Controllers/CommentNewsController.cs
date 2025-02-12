@@ -9,17 +9,16 @@ namespace StudentApp.Controllers
 	{
 		private readonly ILogger<CommentNewsController> _logger;
 		private readonly IConfiguration _configuration;
-        CommentNewsDAO commentNewsDAO;
-        CommentNewsResponseDAO commentNewsResponseDAO;
-        PieceOfNewsDAO newsDAO;
+        private readonly string API_URL;
+
         public CommentNewsController(ILogger<CommentNewsController> logger, IConfiguration configuration)
 		{
 			_logger = logger;
 			_configuration = configuration;
 
-            commentNewsDAO = new CommentNewsDAO(_configuration);
-            newsDAO = new PieceOfNewsDAO(_configuration);
-            commentNewsResponseDAO = new CommentNewsResponseDAO(_configuration);
+
+            API_URL = _configuration["EnvironmentVariables:API_URL"];
+
 
         }
 
@@ -32,7 +31,7 @@ namespace StudentApp.Controllers
             {
                 using (var client = new HttpClient())
                 {
-                    client.BaseAddress = new Uri("https://localhost:7039/api/CommentNews/GetCommentsByPieceOfNewsId/" + id);
+                    client.BaseAddress = new Uri($"{API_URL}/api/CommentNews/GetCommentsByPieceOfNewsId/" + id);
                     var responseTask = client.GetAsync(client.BaseAddress);
                     responseTask.Wait();
 
@@ -65,7 +64,7 @@ namespace StudentApp.Controllers
             {
                 using (var client = new HttpClient())
                 {
-                    client.BaseAddress = new Uri("https://localhost:7039/api/CommentNews/GetResponsesByCommentNewsId/" + id);
+                    client.BaseAddress = new Uri($"{API_URL}/api/CommentNews/GetResponsesByCommentNewsId/" + id);
                     var responseTask = client.GetAsync(client.BaseAddress);
                     responseTask.Wait();
 
@@ -96,7 +95,7 @@ namespace StudentApp.Controllers
         {
             using (var client = new HttpClient())
             {
-                client.BaseAddress = new Uri("https://localhost:7039/api/CommentNews/AddNewsComment");
+                client.BaseAddress = new Uri($"{API_URL}/api/CommentNews/AddNewsComment");
 
                 var postTask = client.PostAsJsonAsync("AddNewsComment", new
                 {
@@ -125,7 +124,7 @@ namespace StudentApp.Controllers
         {
             using (var client = new HttpClient())
             {
-                client.BaseAddress = new Uri("https://localhost:7039/api/CommentNews/AddNewsCommentResponse");
+                client.BaseAddress = new Uri($"{API_URL}/api/CommentNews/AddNewsCommentResponse");
 
                 var postTask = client.PostAsJsonAsync("AddNewsCommentResponse", new
                 {
