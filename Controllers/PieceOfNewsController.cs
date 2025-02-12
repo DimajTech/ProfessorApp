@@ -12,14 +12,13 @@ namespace StudentApp.Controllers
     {
         private readonly ILogger<PieceOfNewsController> _logger;
         private readonly IConfiguration _configuration;
-        PieceOfNewsDAO newsDAO;
+        private readonly string API_URL;
 
         public PieceOfNewsController(ILogger<PieceOfNewsController> logger, IConfiguration configuration)
         {
             _logger = logger;
             _configuration = configuration;
-
-            newsDAO = new PieceOfNewsDAO(_configuration);
+            API_URL = _configuration["EnvironmentVariables:API_URL"];
 
         }
 
@@ -33,7 +32,7 @@ namespace StudentApp.Controllers
             {
                 using (var client = new HttpClient())
                 {
-                    client.BaseAddress = new Uri("https://localhost:7039/api/PieceOfNews/GetPieceOfNews");
+                    client.BaseAddress = new Uri($"{API_URL}/api/PieceOfNews/GetPieceOfNews");
                     var responseTask = client.GetAsync("GetPieceOfNews");
                     responseTask.Wait();
 
@@ -70,7 +69,7 @@ namespace StudentApp.Controllers
             {
                 using (var client = new HttpClient())
                 {
-                    client.BaseAddress = new Uri("https://localhost:7039/api/PieceOfNews/GetPieceOfNews/" + id);
+                    client.BaseAddress = new Uri($"{API_URL}/api/PieceOfNews/GetPieceOfNews/" + id);
                     var responseTask = client.GetAsync(client.BaseAddress);
                     responseTask.Wait();
 
