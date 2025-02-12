@@ -11,6 +11,7 @@ namespace StudentApp.Controllers
         private readonly ILogger<UserController> _logger;
         private readonly IConfiguration _configuration;
         UserDAO userDAO;
+        private readonly string API_URL;
 
         public UserController(ILogger<UserController> logger, IConfiguration configuration)
         {
@@ -18,6 +19,7 @@ namespace StudentApp.Controllers
             _configuration = configuration;
 
             userDAO = new UserDAO(_configuration);
+            API_URL = _configuration["EnvironmentVariables:API_URL"];
 
         }
         [HttpGet]
@@ -36,7 +38,27 @@ namespace StudentApp.Controllers
         {
             try
             {
-                User user = userDAO.GetByEmail(email);
+                User user = null;
+
+                using (var client = new HttpClient())
+                {
+                    client.BaseAddress = new Uri($"{API_URL}/api/User/GetUserByEmail/" + email);
+                    var responseTask = client.GetAsync(client.BaseAddress);
+                    responseTask.Wait();
+
+                    var result = responseTask.Result;
+
+                    if (result.IsSuccessStatusCode)
+                    {
+                        var readTask = result.Content.ReadAsAsync<User>();
+                        readTask.Wait();
+                        //lee el estudiante provenientes de la API
+                        user = readTask.Result;
+
+                    }
+                }
+
+
                 bool success = false;
                 string message = "";
                 string userId = "";
@@ -49,22 +71,31 @@ namespace StudentApp.Controllers
                     {
                         if (user.IsActive)
                         {
-                            var authData = $"{user.Email} {user.Id}";
-
-                            var cookieOptions = new CookieOptions
+                            if (user.Role == "professor")
                             {
-                                //HttpOnly = false,
-                                Secure = true,
-                                Expires = DateTime.UtcNow.AddHours(3)
-                            };
+                                var authData = $"{user.Email} {user.Id}";
 
-                            Response.Cookies.Append("AuthCookie", authData, cookieOptions);
+                                var cookieOptions = new CookieOptions
+                                {
+                                    //HttpOnly = false,
+                                    Secure = true,
+                                    Expires = DateTime.UtcNow.AddHours(3)
+                                };
 
-                            // Devolver los datos en la respuesta JSON
-                            success = true;
-                            userId = user.Id.ToString();
-                            role = user.Role.ToString();
-                            picture = user.Picture.ToString();
+                                Response.Cookies.Append("AuthCookieProfessor", authData, cookieOptions);
+
+                                // Devolver los datos en la respuesta JSON
+                                success = true;
+                                userId = user.Id.ToString();
+                                role = user.Role.ToString();
+                                picture = user.Picture.ToString();
+                            }
+                            else
+                            {
+                                message = "Su usuario no es un profesor. ";
+
+                            }
+
                         }
                         else
                         {
@@ -89,46 +120,6 @@ namespace StudentApp.Controllers
             }
         }
 
-
-
-
-        [HttpPost]
-        public IActionResult Register([FromBody] User user)
-        {
-            bool success = false;
-            string message = "";
-            try
-            {
-                if (userDAO.GetByEmail(user.Email).Email == null)
-                {
-                    int result = userDAO.Insert(user);
-
-                    if(result == 1)
-                    {
-                        success = true;
-                        message = "Su solicitud ha sido enviada correctamente. Revisa tu correo. ";
-                    }
-                    else
-                    {
-                        success = false;
-                        message = "No ha sido posible hacer la solicitud de registro. Intente de nuevo más tarde. ";
-                    }
-                }
-                else
-                {
-                    success = false;
-                    message = "El correo electrónico ya ha sido registrado en el sistema. ";
-                }
-
-            }
-            catch (SqlException e)
-            {
-                 success = false;
-                 message = "Ha ocurrido un error inesperado en el sistema. Intente de nuevo más tarde.";
-            }
-            return Json(new { success = success, message = message });
-
-        }
 
 		[HttpGet]
 		public IActionResult GetByEmail([FromQuery] string email)

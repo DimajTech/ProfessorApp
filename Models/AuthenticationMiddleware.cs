@@ -11,7 +11,7 @@
     {
         var path = context.Request.Path.Value;
 
-        if (path == "/User/Login" || path == "/User/Register"
+        if (path == "/User/Login"
             || path.StartsWith("/css") || path.StartsWith("/js") || path.StartsWith("/images"))
         {
             await _next(context);
@@ -20,7 +20,7 @@
 
 
         //si la cookie no existe
-        if (!context.Request.Cookies.ContainsKey("AuthCookie"))
+        if (!context.Request.Cookies.ContainsKey("AuthCookieProfessor"))
         {
             context.Response.Redirect("/User/Login");
             return;
