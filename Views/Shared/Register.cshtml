@@ -1,0 +1,60 @@
+﻿@{
+    ViewData["Title"] = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<div class="contact-us section" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6  align-self-center">
+                <div class="section-heading">
+                    <h6>¡Regístrate Hoy!</h6>
+                    <h2>Forma Parte de Nuestra Comunidad Universitaria</h2>
+                    <p>Descubre un mundo de oportunidades diseñado exclusivamente para estudiantes activos de la Universidad de Costa Rica. Accede a contenido exclusivo, conecta con tus compañeros y lleva tu experiencia académica al siguiente nivel.</p>
+
+                </div>
+                <img src="/images/firma-promocional-con-texto-negro.png" alt="Black University Logo" style="height:auto;" />
+
+            </div>
+            <div class="col-lg-6">
+                <div class="contact-us-content">
+                    <form id="register-form" method="post">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <fieldset>
+                                    <input type="text" name="r-name" id="r-name" placeholder="Ingrese su nombre completo..." required>
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-12">
+                                <fieldset>
+                                    <input type="text" name="r-email" id="r-email" placeholder="Ingrese su correo..." required>
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-12">
+                                <fieldset>
+                                    <input type="password" name="r-password" id="r-password" placeholder="Ingrese su contraseña..." required>
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-12">
+                                <fieldset>
+                                    <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirme su contraseña..." required>
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-12">
+                                <fieldset>
+                                    <button type="submit" id="form-submit" class="orange-button">Enviar Solicitud</button>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <br />
+                        <label id="validation"></label>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

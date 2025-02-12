@@ -1,0 +1,148 @@
+﻿.profile-input {
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    background-color: rgba(249, 235, 255, 0.15);
+    border: none;
+    outline: none;
+    font-weight: 300;
+    padding: 0px 20px;
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 3;
+}
+
+.profile-button {
+    border: none;
+    height: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #fff;
+    padding: 0px 25px;
+    border-radius: 25px;
+    color: #66c5e3;
+    transition: all .4s;
+    position: relative;
+    z-index: 3;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.profile-button:hover {
+    transform: scale(1.1);
+}
+
+.profile-second-div {
+    border-radius: 25px;
+    padding: 80px;
+    background-color: #66c5e3;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#p-picture {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+}
+
+@media (min-width: 992px) {
+    .profile-main-div {
+        flex: 0 0 auto;
+        width: 75%;
+    }
+}
+
+.p-photo-row {
+    display: flex;
+    align-items: center;
+    width: 75%;
+    margin-bottom: 25px;
+    gap: 30px;
+}
+
+.p-buttons-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    margin-bottom: 25px;
+    gap: 50%;
+}
+
+.p-div-delete-button {
+    display: flex;
+    align-items: center;
+    width: 75%;
+    margin-bottom: 25px;
+}
+
+.p-red-button {
+    border: none;
+    height: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #e91613;
+    color: white;
+    padding: 0px 25px;
+    border-radius: 25px;
+    transition: all .4s;
+    position: relative;
+    z-index: 3;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.p-red-button:hover {
+    transform: scale(1.1);
+}
+
+#upload-image-input {
+    display: none;
+}
+
+#p-picture {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+#p-picture:hover {
+    transform: scale(1.1);
+}
+
+
+#p-upload-img-label {
+    border: none;
+    height: 40px;
+    width: 150px;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #fff;
+    padding: 12px;
+    border-radius: 25px;
+    color: #66c5e3;
+    transition: all .4s;
+    position: relative;
+    z-index: 3;
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+#p-upload-img-label:hover {
+    transform: scale(1.1);
+}

@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "NewsDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+<div class="section-news">
+    <button onclick="loadSection('view/news')" class="button-news">
+        ← Volver
+    </button>
+
+<img src="" alt="" style="border-radius: 33px; padding-top:20px; padding-bottom:20px" id="img-news-detail">
+<h2 id="title-news-detail"></h2>
+<p id="autor-news-detail"></p>
+<p id="date-news-detail"></p>
+<p id="description-news-detail" style="text-align:justify; border-radius: 33px; padding-top:20px; padding-bottom:20px; white-space: pre-line;"></p>
+<div id="commentsContainer"></div>
+</div>

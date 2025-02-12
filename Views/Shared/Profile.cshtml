@@ -1,0 +1,53 @@
+﻿<section id="profile" class="p-section">
+    <div class="profile-main-div">
+        <div class="profile-second-div">
+
+            <div class="p-photo-row">
+                <img src="" id="p-picture">
+                <h2 id="p-name" class=""></h2>
+                <p id="p-id" value="" hidden></p>
+            </div>
+
+            <div class="profile-main-div">
+                <label for="upload-image-input" id="p-upload-img-label" hidden>Cambiar imagen</label>
+                <input type="file" id="upload-image-input" accept="image/*" onchange="ShowImage(this)"/>
+            </div>
+
+            <div class="profile-main-div">
+                <label>Nombre</label>
+                <input id="p-name2" class="profile-input" value="" readonly>
+            </div>
+
+            <div class="profile-main-div">
+                <label class="">Correo electrónico</label>
+                <input id="p-email" class="profile-input" type="email" value="" readonly>
+                <p id="email-warning" style="color: red; margin-bottom: 30px;" hidden>*El correo electrónico no se puede editar</p>
+            </div>
+
+            <div class="profile-main-div">
+                <label class="">Contraseña</label>
+                <input id="p-password" class="profile-input" type="password" value="" readonly>
+            </div>
+
+            <div class="profile-main-div">
+                <label class="">Descripción</label>
+                <textarea id="p-description" class="profile-input" style="height:200px; resize: none; padding-top: 10px;" readonly></textarea>
+            </div>
+
+
+            <div class="profile-main-div">
+                <label class="">LinkedIn</label>
+                <input id="p-linkedin" class="profile-input" value="" readonly>
+            </div>
+
+            <div class="p-buttons-row">
+                <button id="p-button" class="profile-button" onclick="HandleEditing()">Editar</button>
+                <button id="p-cancel-button" class="p-red-button" onclick="CancelEditing()" hidden style="background-color:#dc3545">Cancelar</button>
+            </div>
+
+            <div class="p-div-delete-button" style="justify-content:center;">
+                <button id="p-delete-button" class="p-red-button" onclick="DeleteAccount()" style="background-color:#dc3545">Eliminar cuenta</button>
+            </div>
+        </div>
+    </div>
+</section>

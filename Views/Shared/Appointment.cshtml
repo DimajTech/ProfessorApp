@@ -1,0 +1,100 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="~/css/templatemo-scholar.css">
+
+
+
+<section id="myAppointments-appointment" style="margin: 80px">
+    <div class="w3-container-appointment">
+        <div class="row">
+            <div class="section-title-appointment">
+                <h2>Mis citas</h2>
+            </div>
+
+            <div class="col-md-12 col-sm-12">
+
+                <div class="table-responsive-appointment">
+
+                    <table class="w3-table-all-appointment" id="myappointments-table">
+
+                        <thead>
+
+                            <tr class="w3-black">
+
+                                <th>
+                                    Fecha
+                                </th>
+                                <th>
+                                    Hora
+                                </th>
+                                <th>
+                                    Modo
+                                </th>
+                                <th>
+                                    Estado
+                                </th>
+                                <th>
+                                    Curso
+                                </th>
+                                <th>
+                                    Comentario del profesor
+                                </th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody id="myappointments-tbody">
+                        </tbody>
+
+                    </table>
+                    <p id="noAppointmentsMessage" style="display: none;">No se encontraron citas registradas</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="section-appointment">
+    <form class="form-appointment">
+        <h2 class="h2-appointment">Agendar Hora Consulta</h2>
+        <div>
+            <label class="label-appointment" for="course">
+                Curso:
+            </label>
+            <select id="course" class="select-appointment" style="width:100%;">
+            </select>
+        </div>
+
+
+        <div>
+            <label class="label-appointment">Fecha:</label>
+            <input type="date" id="datetime" class="input-appointment" />
+        </div>
+
+        <div>
+            <label class="label-appointment">Hora:</label>
+            <select id="time" style="width:100%;" class="input-appointment" size="1">
+            </select>
+
+        </div>
+
+        <div>
+            <label class="label-appointment">Modalidad</label>
+            <select id="mode" style="width:100%;" class="input-appointment">
+                <option value="1">Virtual</option>
+                <option value="2">Presencial</option>
+            </select>
+        </div>
+        <button type="button" class="button button-registrar" onclick="AddAppointment()">Registrar</button>
+        <button type="reset" class="button button-cancelar">Cancelar</button>
+
+    </form>
+</section>
+
+

@@ -1,0 +1,47 @@
+﻿@{
+    ViewData["Title"] = "AdvisementDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<!-- Sección para detalles de consulta, permanece oculta-->
+
+<section class="section-advisement-details" style="display: none;" id="advisement-details">
+
+    <button onclick="loadSection('view/advisement')" class="button-news">
+        ← Volver
+    </button>
+
+    <div class="container">
+
+        <h2 class="text-center">Detalles de consulta</h2>
+
+        <div class="mb-3">
+            <label for="course" class="form-label"><strong>Curso:</strong></label>
+            <input type="text" class="form-control" id="course" placeholder="Enter the course name" readonly>
+        </div>
+
+        <div class="mb-3">
+            <label for="author" class="form-label"><strong>Autor:</strong></label>
+            <input type="text" class="form-control" id="author" placeholder="Enter the student's name" readonly>
+        </div>
+
+        <div class="mb-3">
+            <label for="content" class="form-label"><strong>Consulta:</strong></label>
+            <textarea class="form-control" id="content" rows="4" placeholder="Enter the consultation content" readonly style="resize:none;"></textarea>
+        </div>
+
+        <!-- Falta la parte de los comentarios  -->
+        <h2 class="text-center">Respuestas</h2>
+        <div id="responses-container">
+
+
+
+
+
+
+        </div>
+
+    </div>
+</section>
+
