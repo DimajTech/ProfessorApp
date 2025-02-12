@@ -37,7 +37,7 @@
 
 </head>
 @{
-    var isAuthenticated = Context.Request.Cookies.ContainsKey("AuthCookie");
+    var isAuthenticated = Context.Request.Cookies.ContainsKey("AuthCookieProfessor");
 }
 <body style="padding-bottom:100px;">
 
@@ -107,7 +107,6 @@
                             <!-- ***** Menu Start ***** -->
                             <ul class="nav">
                                 <li><a href="/User/Login">Iniciar Sesión</a></li>
-                                <li><a href="/User/Register">Registrarse</a></li>
                             </ul>
                             <a class='menu-trigger'>
                                 <span>Menu</span>

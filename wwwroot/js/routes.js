@@ -119,7 +119,7 @@ function getCookie(name) {
 
 function toggleHeader() {
 
-    const isAuthenticated = getCookie("AuthCookie") !== null;
+    const isAuthenticated = getCookie("AuthCookieProfessor") !== null;
 
     $("#page-container").removeClass();
     const picture = localStorage.getItem("userPicture");
@@ -140,7 +140,6 @@ function toggleHeader() {
     } else {
         $("#header").html(`
             <li><a href="/user/login">Iniciar sesión</a></li>
-            <li><a href="/user/register">Registrarse</a></li>
         `);
     }
 
@@ -165,8 +164,8 @@ function logoutUser() {
         confirmButtonText: 'Aceptar',
         cancelButtonText: 'Cancelar'
     }).then((result) => {
-        if (result.isConfirmed) { // Cambiado de result.success a result.isConfirmed
-            document.cookie = "AuthCookie=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+        if (result.isConfirmed) { 
+            document.cookie = "AuthCookieProfessor=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
             window.location.href = "/user/login";
         }
     });
