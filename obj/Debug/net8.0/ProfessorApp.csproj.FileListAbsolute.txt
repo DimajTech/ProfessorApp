@@ -75,3 +75,7 @@ C:\Users\Usuario\Desktop\ProfessorApp\obj\Debug\net8.0\refint\ProfessorApp.dll
 C:\Users\Usuario\Desktop\ProfessorApp\obj\Debug\net8.0\ProfessorApp.pdb
 C:\Users\Usuario\Desktop\ProfessorApp\obj\Debug\net8.0\ProfessorApp.genruntimeconfig.cache
 C:\Users\Usuario\Desktop\ProfessorApp\obj\Debug\net8.0\ref\ProfessorApp.dll
+C:\Users\Usuario\Desktop\ProfessorApp\bin\Debug\net8.0\System.Net.Http.Formatting.dll
+C:\Users\Usuario\Desktop\ProfessorApp\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Usuario\Desktop\ProfessorApp\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+C:\Users\Usuario\Desktop\ProfessorApp\obj\Debug\net8.0\ProfessorApp.sourcelink.json

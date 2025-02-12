@@ -23,53 +23,77 @@ namespace StudentApp.Controllers
 
         }
 
-
+        //Primero
         [HttpGet]
         public IEnumerable<PieceOfNews> GetNews()
         {
-            //TODO Manejar excepciones
+            IEnumerable<PieceOfNews> pieceOfNews = null;
 
-
-            return newsDAO.Get();
-        }
-
-        [HttpPost]
-        public IActionResult CreateNews([FromBody] PieceOfNews news)
-        {
             try
             {
-                return Ok(newsDAO.Insert(news));
+                using (var client = new HttpClient())
+                {
+                    client.BaseAddress = new Uri("https://localhost:7039/api/PieceOfNews/GetPieceOfNews");
+                    var responseTask = client.GetAsync("GetPieceOfNews");
+                    responseTask.Wait();
+
+                    var result = responseTask.Result;
+
+                    if (result.IsSuccessStatusCode)
+                    {
+                        var readTask = result.Content.ReadAsAsync<IList<PieceOfNews>>();
+                        readTask.Wait();
+
+                        pieceOfNews = readTask.Result;
+                    }
+                    else
+                    {
+                        pieceOfNews = Enumerable.Empty<PieceOfNews>();
+                    }
+                }
             }
-            catch (SqlException e)
+            catch
             {
-                return StatusCode(500, new { message = "An error occurred", error = e.Message });
+
+                ModelState.AddModelError(string.Empty, "Server error. Please contact an administrator");
+
             }
-            catch (Exception e)
-            {
-                return StatusCode(500, new { message = "An unexpected error occurred", error = e.Message });
-            }
+
+            return pieceOfNews;
         }
 
         public IActionResult GetById(string id)
         {
+            PieceOfNews news = null;
+
             try
             {
-                PieceOfNews news =  newsDAO.Get(id);
-
-                Console.WriteLine(news);
-                if(news.User is null)
+                using (var client = new HttpClient())
                 {
-                    return Ok(null);
+                    client.BaseAddress = new Uri("https://localhost:7039/api/PieceOfNews/GetPieceOfNews/" + id);
+                    var responseTask = client.GetAsync(client.BaseAddress);
+                    responseTask.Wait();
 
+                    var result = responseTask.Result;
+
+                    if (result.IsSuccessStatusCode)
+                    {
+                        var readTask = result.Content.ReadAsAsync<PieceOfNews>();
+                        readTask.Wait();
+                        //lee el estudiante provenientes de la API
+                        news = readTask.Result;
+
+                    }
                 }
-                return Ok(news);
-
             }
-            catch (Exception e)
+            catch
             {
-                return StatusCode(500, new { message = "An unexpected error occurred", error = e.Message });
+                ModelState.AddModelError(string.Empty, "Server error. Please contact an administrator");
 
             }
+
+
+            return Ok(news);
         }
     }
 }
