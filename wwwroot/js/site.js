@@ -878,139 +878,11 @@ function ShowImage(input) {
 //--------------NEWS SECTION----------------------
 //------------------------------------------------
 
-//Add News
-
-function AddPieceOfNews() {
-
-    setLoading(true);
-
-    const fileInput = document.getElementById("add-news-image-upload");
-    const file = fileInput.files[0];
-
-    if (file) {
-        const reader = new FileReader();
-        reader.readAsDataURL(file);
-
-        reader.onload = function () {
-
-            var title = ($('#add-news-title').val() || "").trim();
-            var description = ($('#add-news-description').val() || "").trim();
-
-            if (title.length > 0 && description.length > 0) {
-
-                var news = {
-                    title: $('#add-news-title').val(),
-                    description: $('#add-news-description').val(),
-                    picture: reader.result,
-                    user: {
-                        id: localStorage.getItem("userId"),
-                        role: localStorage.getItem("role")
-                    }
-                };
-                $.ajax({
-                    url: "/PieceOfNews/CreateNews",
-                    data: JSON.stringify(news), //convierte la variable estudiante en tipo json
-                    type: "POST",
-                    contentType: "application/json;charset=utf-8",
-                    dataType: "json",
-                    success: function (response) {
-
-                        console.log(response)
-
-                        if (response === -1) {
-                            $('#add-news-title').val('');
-                            $('#add-news-description').val('');
-
-                            $("#previewImage").attr("src", "/images/photo-editor-icon.png");
-                            $(fileInput).val(""); // Resetear input si no es imagen
-                            $("#fileName").text("Sin archivos seleccionados");
-
-
-                            toastr.options.positionClass = 'toast-bottom-right';
-                            toastr.success('La noticia se ha publicado con éxito');
-
-                        } else {
-
-                            toastr.options.positionClass = 'toast-bottom-right';
-                            toastr.error('No cuentas con los permisos para realizar esta acción.');
-                        }
-
-                        setLoading(false);
-
-
-
-                    },
-                    error: function (errorMessage) {
-
-                        toastr.options.positionClass = 'toast-bottom-right';
-                        toastr.error('Ha ocurrido un error al guardar la noticia. Intente de nuevo más tarde.');
-
-                        console.error(errorMessage.message);
-                        setLoading(false);
-
-                    }
-                });
-            } else {
-                toastr.options.positionClass = 'toast-bottom-right';
-                toastr.error('No se permiten espacios vacíos...');
-                setLoading(false);
-            }
-        };
-
-        reader.onerror = function () {
-
-            toastr.options.positionClass = 'toast-bottom-right';
-            toastr.error('Ha ocurrido un error al cargar la imagen. Intente de nuevo.');
-
-            setLoading(false);
-        };
-    } else {
-        toastr.options.positionClass = 'toast-bottom-right';
-        toastr.error('Debes seleccionar una imagen de portada.');
-        setLoading(false);
-    }
-
-}
-function previewSelectedImage(input) {
-
-    if (input.files && input.files[0]) {
-        const file = input.files[0];
-
-        if (file.type.startsWith("image/")) {
-            const reader = new FileReader();
-
-            reader.onload = function (e) {
-                $("#previewImage").attr("src", e.target.result);
-                $("#fileName").text(file.name);
-            };
-
-            reader.readAsDataURL(file);
-        } else {
-            toastr.options.positionClass = 'toast-bottom-right';
-            toastr.error('Por favor seleccione una imagen.');
-
-            $("#previewImage").attr("src", "/images/istockphoto-1128826884-612x612.jpg");
-
-            $(input).val(""); // Resetear input si no es imagen
-            $("#fileName").text("Sin archivos seleccionados");
-        }
-    }
-}
-
-
 //News Items
 function LoadNewsItems() {
 
     setLoading(true);
 
-    const role = localStorage.getItem("role");
-    const addBtn = $(`#add-news-btn`);
-
-    if (role === "President") {
-        addBtn.css("display", "block");
-    }else {
-        addBtn.css("display", "none");
-    }
 
     $.ajax({
         url: "/PieceOfNews/GetNews",
@@ -1213,14 +1085,15 @@ function LoadNewsCommentsResponse(commentID, container, counter) {
         contentType: "application/json;charset=utf-8",
         success: function (responses) {
 
-
             var htmlContent = '';
-            //Itera sobre las respuestas de los comentarios 
-            responses.forEach(response => {
 
-                totalResponses++;
+            if (responses) {
+                //Itera sobre las respuestas de los comentarios 
+                responses.forEach(response => {
 
-                htmlContent += `
+                    totalResponses++;
+
+                    htmlContent += `
                     <div class="response-card">
                         <div class="comment-header">
                             <div>
@@ -1236,11 +1109,12 @@ function LoadNewsCommentsResponse(commentID, container, counter) {
                     </div>
                 `;
 
-            });
+                });
 
-            
-            $('#' + container).html(htmlContent);
+            }
             $('#' + counter).text(totalResponses);
+
+            $('#' + container).html(htmlContent);
 
         },
         error: function (errorMessage) {
