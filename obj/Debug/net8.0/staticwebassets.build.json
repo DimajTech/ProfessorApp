@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+2cBpyMWzOjQrrlWr4RQMVpg8JILGbDfF5f77PAvECQ=",
+  "Hash": "PSOS7YHjvq52ViO2iprw66B9QKzEKqLPXBMm72jXtNM=",
   "Source": "ProfessorApp",
   "BasePath": "_content/ProfessorApp",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "ProfessorApp\\wwwroot",
       "Source": "ProfessorApp",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\ProfessorApp.styles.css",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\ProfessorApp.styles.css",
       "SourceId": "ProfessorApp",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "ProfessorApp.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\ProfessorApp.styles.css"
+      "OriginalItemSpec": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\ProfessorApp.styles.css"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ProfessorApp.bundle.scp.css",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ProfessorApp.bundle.scp.css",
       "SourceId": "ProfessorApp",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "ProfessorApp.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ProfessorApp.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ProfessorApp.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\css\\animate.css",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\css\\animate.css",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "css/animate.css",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\css\\animate.css"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\css\\bootstrap.min.css",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "css/bootstrap.min.css",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\css\\flex-slider.css",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\css\\flex-slider.css",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "css/flex-slider.css",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\css\\flex-slider.css"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\css\\fontawesome.css",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\css\\fontawesome.css",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "css/fontawesome.css",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\css\\fontawesome.css"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\css\\news.css",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\css\\news.css",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "css/news.css",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\css\\news.css"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\css\\owl.css",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\css\\owl.css",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "css/owl.css",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\css\\owl.css"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\css\\profile.css",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\css\\profile.css",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "css/profile.css",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\css\\profile.css"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\css\\site.css",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -207,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\css\\templatemo-scholar.css",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\css\\templatemo-scholar.css",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "css/templatemo-scholar.css",
       "AssetKind": "All",
@@ -226,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\css\\templatemo-scholar.css"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\favicon.ico",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -245,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\images\\banner-bg.jpg",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\images\\banner-bg.jpg",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "images/banner-bg.jpg",
       "AssetKind": "All",
@@ -264,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\images\\banner-bg.jpg"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\images\\banner-item-01.jpg",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\images\\banner-item-01.jpg",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "images/banner-item-01.jpg",
       "AssetKind": "All",
@@ -283,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\images\\banner-item-01.jpg"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\images\\banner-item-02.jpg",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\images\\banner-item-02.jpg",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "images/banner-item-02.jpg",
       "AssetKind": "All",
@@ -302,10 +302,10 @@
       "OriginalItemSpec": "wwwroot\\images\\banner-item-02.jpg"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\images\\banner-item-03.jpg",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\images\\banner-item-03.jpg",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "images/banner-item-03.jpg",
       "AssetKind": "All",
@@ -321,10 +321,10 @@
       "OriginalItemSpec": "wwwroot\\images\\banner-item-03.jpg"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\images\\comment-box-icon.png",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\images\\comment-box-icon.png",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "images/comment-box-icon.png",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\images\\comment-box-icon.png"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\images\\contact-dec-01.png",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\images\\contact-dec-01.png",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "images/contact-dec-01.png",
       "AssetKind": "All",
@@ -359,10 +359,10 @@
       "OriginalItemSpec": "wwwroot\\images\\contact-dec-01.png"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\images\\contact-dec-02.png",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\images\\contact-dec-02.png",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "images/contact-dec-02.png",
       "AssetKind": "All",
@@ -378,10 +378,10 @@
       "OriginalItemSpec": "wwwroot\\images\\contact-dec-02.png"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\images\\course-01.jpg",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\images\\course-01.jpg",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "images/course-01.jpg",
       "AssetKind": "All",
@@ -397,10 +397,10 @@
       "OriginalItemSpec": "wwwroot\\images\\course-01.jpg"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\images\\course-02.jpg",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\images\\course-02.jpg",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "images/course-02.jpg",
       "AssetKind": "All",
@@ -416,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\images\\course-02.jpg"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\images\\course-03.jpg",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\images\\course-03.jpg",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "images/course-03.jpg",
       "AssetKind": "All",
@@ -435,10 +435,10 @@
       "OriginalItemSpec": "wwwroot\\images\\course-03.jpg"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\images\\course-04.jpg",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\images\\course-04.jpg",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "images/course-04.jpg",
       "AssetKind": "All",
@@ -454,10 +454,10 @@
       "OriginalItemSpec": "wwwroot\\images\\course-04.jpg"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\images\\course-05.jpg",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\images\\course-05.jpg",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "images/course-05.jpg",
       "AssetKind": "All",
@@ -473,10 +473,10 @@
       "OriginalItemSpec": "wwwroot\\images\\course-05.jpg"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\images\\course-06.jpg",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\images\\course-06.jpg",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "images/course-06.jpg",
       "AssetKind": "All",
@@ -492,10 +492,10 @@
       "OriginalItemSpec": "wwwroot\\images\\course-06.jpg"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\images\\door-check-out-icon.png",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\images\\door-check-out-icon.png",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "images/door-check-out-icon.png",
       "AssetKind": "All",
@@ -511,10 +511,10 @@
       "OriginalItemSpec": "wwwroot\\images\\door-check-out-icon.png"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\images\\event-01.jpg",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\images\\event-01.jpg",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "images/event-01.jpg",
       "AssetKind": "All",
@@ -530,10 +530,10 @@
       "OriginalItemSpec": "wwwroot\\images\\event-01.jpg"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\images\\event-02.jpg",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\images\\event-02.jpg",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "images/event-02.jpg",
       "AssetKind": "All",
@@ -549,10 +549,10 @@
       "OriginalItemSpec": "wwwroot\\images\\event-02.jpg"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\images\\event-03.jpg",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\images\\event-03.jpg",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "images/event-03.jpg",
       "AssetKind": "All",
@@ -568,10 +568,10 @@
       "OriginalItemSpec": "wwwroot\\images\\event-03.jpg"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\images\\firma-promocional-con-texto-negro.png",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\images\\firma-promocional-con-texto-negro.png",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "images/firma-promocional-con-texto-negro.png",
       "AssetKind": "All",
@@ -587,10 +587,10 @@
       "OriginalItemSpec": "wwwroot\\images\\firma-promocional-con-texto-negro.png"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\images\\istockphoto-1128826884-612x612.jpg",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\images\\istockphoto-1128826884-612x612.jpg",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "images/istockphoto-1128826884-612x612.jpg",
       "AssetKind": "All",
@@ -606,10 +606,10 @@
       "OriginalItemSpec": "wwwroot\\images\\istockphoto-1128826884-612x612.jpg"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\images\\member-01.jpg",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\images\\member-01.jpg",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "images/member-01.jpg",
       "AssetKind": "All",
@@ -625,10 +625,10 @@
       "OriginalItemSpec": "wwwroot\\images\\member-01.jpg"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\images\\member-02.jpg",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\images\\member-02.jpg",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "images/member-02.jpg",
       "AssetKind": "All",
@@ -644,10 +644,10 @@
       "OriginalItemSpec": "wwwroot\\images\\member-02.jpg"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\images\\member-03.jpg",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\images\\member-03.jpg",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "images/member-03.jpg",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\images\\member-03.jpg"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\images\\member-04.jpg",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\images\\member-04.jpg",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "images/member-04.jpg",
       "AssetKind": "All",
@@ -682,10 +682,10 @@
       "OriginalItemSpec": "wwwroot\\images\\member-04.jpg"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\images\\photo-editor-icon.png",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\images\\photo-editor-icon.png",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "images/photo-editor-icon.png",
       "AssetKind": "All",
@@ -701,10 +701,10 @@
       "OriginalItemSpec": "wwwroot\\images\\photo-editor-icon.png"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\images\\service-01.png",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\images\\service-01.png",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "images/service-01.png",
       "AssetKind": "All",
@@ -720,10 +720,10 @@
       "OriginalItemSpec": "wwwroot\\images\\service-01.png"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\images\\service-02.png",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\images\\service-02.png",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "images/service-02.png",
       "AssetKind": "All",
@@ -739,10 +739,10 @@
       "OriginalItemSpec": "wwwroot\\images\\service-02.png"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\images\\service-03.png",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\images\\service-03.png",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "images/service-03.png",
       "AssetKind": "All",
@@ -758,10 +758,10 @@
       "OriginalItemSpec": "wwwroot\\images\\service-03.png"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\images\\testimonial-author.jpg",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\images\\testimonial-author.jpg",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "images/testimonial-author.jpg",
       "AssetKind": "All",
@@ -777,10 +777,10 @@
       "OriginalItemSpec": "wwwroot\\images\\testimonial-author.jpg"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\images\\university-logo.png",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\images\\university-logo.png",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "images/university-logo.png",
       "AssetKind": "All",
@@ -796,10 +796,10 @@
       "OriginalItemSpec": "wwwroot\\images\\university-logo.png"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\images\\user.png",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\images\\user.png",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "images/user.png",
       "AssetKind": "All",
@@ -815,10 +815,10 @@
       "OriginalItemSpec": "wwwroot\\images\\user.png"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\jquery\\jquery.js",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\jquery\\jquery.js",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "jquery/jquery.js",
       "AssetKind": "All",
@@ -834,10 +834,10 @@
       "OriginalItemSpec": "wwwroot\\jquery\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\jquery\\jquery.min.js",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\jquery\\jquery.min.js",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "jquery/jquery.min.js",
       "AssetKind": "All",
@@ -853,10 +853,10 @@
       "OriginalItemSpec": "wwwroot\\jquery\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\jquery\\jquery.min.map",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\jquery\\jquery.min.map",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "jquery/jquery.min.map",
       "AssetKind": "All",
@@ -872,10 +872,10 @@
       "OriginalItemSpec": "wwwroot\\jquery\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\jquery\\jquery.slim.js",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\jquery\\jquery.slim.js",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "jquery/jquery.slim.js",
       "AssetKind": "All",
@@ -891,10 +891,10 @@
       "OriginalItemSpec": "wwwroot\\jquery\\jquery.slim.js"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\jquery\\jquery.slim.min.js",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\jquery\\jquery.slim.min.js",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "jquery/jquery.slim.min.js",
       "AssetKind": "All",
@@ -910,10 +910,10 @@
       "OriginalItemSpec": "wwwroot\\jquery\\jquery.slim.min.js"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\jquery\\jquery.slim.min.map",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\jquery\\jquery.slim.min.map",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "jquery/jquery.slim.min.map",
       "AssetKind": "All",
@@ -929,10 +929,10 @@
       "OriginalItemSpec": "wwwroot\\jquery\\jquery.slim.min.map"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\js\\bootstrap.min.js",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "js/bootstrap.min.js",
       "AssetKind": "All",
@@ -948,10 +948,10 @@
       "OriginalItemSpec": "wwwroot\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\js\\counter.js",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\js\\counter.js",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "js/counter.js",
       "AssetKind": "All",
@@ -967,10 +967,10 @@
       "OriginalItemSpec": "wwwroot\\js\\counter.js"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\js\\custom.js",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\js\\custom.js",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "js/custom.js",
       "AssetKind": "All",
@@ -986,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\js\\custom.js"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\js\\isotope.min.js",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\js\\isotope.min.js",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "js/isotope.min.js",
       "AssetKind": "All",
@@ -1005,10 +1005,10 @@
       "OriginalItemSpec": "wwwroot\\js\\isotope.min.js"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\js\\owl-carousel.js",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\js\\owl-carousel.js",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "js/owl-carousel.js",
       "AssetKind": "All",
@@ -1024,10 +1024,10 @@
       "OriginalItemSpec": "wwwroot\\js\\owl-carousel.js"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\js\\routes.js",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\js\\routes.js",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "js/routes.js",
       "AssetKind": "All",
@@ -1043,10 +1043,10 @@
       "OriginalItemSpec": "wwwroot\\js\\routes.js"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\js\\site.js",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -1062,10 +1062,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -1081,10 +1081,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -1100,10 +1100,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -1119,10 +1119,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -1138,10 +1138,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -1157,10 +1157,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -1176,10 +1176,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -1195,10 +1195,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -1214,10 +1214,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -1233,10 +1233,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -1252,10 +1252,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -1271,10 +1271,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -1290,10 +1290,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -1309,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -1328,10 +1328,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -1347,10 +1347,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -1366,10 +1366,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -1385,10 +1385,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -1404,10 +1404,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -1423,10 +1423,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -1442,10 +1442,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -1461,10 +1461,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -1480,10 +1480,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -1499,10 +1499,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -1518,10 +1518,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -1537,10 +1537,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -1556,10 +1556,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -1575,10 +1575,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -1594,10 +1594,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -1613,10 +1613,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -1632,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -1651,10 +1651,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -1670,10 +1670,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -1689,10 +1689,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -1708,10 +1708,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -1727,10 +1727,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -1746,10 +1746,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -1765,10 +1765,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -1784,10 +1784,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -1803,10 +1803,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -1822,10 +1822,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -1841,10 +1841,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -1860,10 +1860,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -1879,10 +1879,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -1898,10 +1898,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -1917,10 +1917,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -1936,10 +1936,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -1955,10 +1955,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -1974,10 +1974,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -1993,10 +1993,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -2012,10 +2012,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -2031,10 +2031,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -2050,10 +2050,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -2069,10 +2069,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -2088,10 +2088,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -2107,10 +2107,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -2126,10 +2126,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -2145,10 +2145,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\webfonts\\fa-brands-400.ttf",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\webfonts\\fa-brands-400.ttf",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "webfonts/fa-brands-400.ttf",
       "AssetKind": "All",
@@ -2164,10 +2164,10 @@
       "OriginalItemSpec": "wwwroot\\webfonts\\fa-brands-400.ttf"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\webfonts\\fa-brands-400.woff2",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\webfonts\\fa-brands-400.woff2",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "webfonts/fa-brands-400.woff2",
       "AssetKind": "All",
@@ -2183,10 +2183,10 @@
       "OriginalItemSpec": "wwwroot\\webfonts\\fa-brands-400.woff2"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\webfonts\\fa-regular-400.ttf",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\webfonts\\fa-regular-400.ttf",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "webfonts/fa-regular-400.ttf",
       "AssetKind": "All",
@@ -2202,10 +2202,10 @@
       "OriginalItemSpec": "wwwroot\\webfonts\\fa-regular-400.ttf"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\webfonts\\fa-regular-400.woff2",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\webfonts\\fa-regular-400.woff2",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "webfonts/fa-regular-400.woff2",
       "AssetKind": "All",
@@ -2221,10 +2221,10 @@
       "OriginalItemSpec": "wwwroot\\webfonts\\fa-regular-400.woff2"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\webfonts\\fa-solid-900.ttf",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\webfonts\\fa-solid-900.ttf",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "webfonts/fa-solid-900.ttf",
       "AssetKind": "All",
@@ -2240,10 +2240,10 @@
       "OriginalItemSpec": "wwwroot\\webfonts\\fa-solid-900.ttf"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\webfonts\\fa-solid-900.woff2",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\webfonts\\fa-solid-900.woff2",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "webfonts/fa-solid-900.woff2",
       "AssetKind": "All",
@@ -2259,10 +2259,10 @@
       "OriginalItemSpec": "wwwroot\\webfonts\\fa-solid-900.woff2"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\webfonts\\fa-v4compatibility.ttf",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\webfonts\\fa-v4compatibility.ttf",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "webfonts/fa-v4compatibility.ttf",
       "AssetKind": "All",
@@ -2278,10 +2278,10 @@
       "OriginalItemSpec": "wwwroot\\webfonts\\fa-v4compatibility.ttf"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\webfonts\\fa-v4compatibility.woff2",
+      "Identity": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\webfonts\\fa-v4compatibility.woff2",
       "SourceId": "ProfessorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\ProfessorApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\wwwroot\\",
       "BasePath": "_content/ProfessorApp",
       "RelativePath": "webfonts/fa-v4compatibility.woff2",
       "AssetKind": "All",

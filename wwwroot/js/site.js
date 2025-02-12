@@ -638,11 +638,14 @@ function GetUserData() {
         contentType: "application/json;charset=utf-8",
         dataType: "json",
         success: function (result) {
+            console.log(result);
+
             $('#p-id').val(result.id);
             $('#p-name').text(result.name);
             $('#p-name2').val(result.name);
             $('#p-email').val(result.email);
             $('#p-description').val(result.description);
+            $('#p-background').val(result.professionalBackground);
             $('#p-linkedin').val(result.linkedIn);
             $('#p-password').val(result.password);
 
@@ -699,6 +702,7 @@ function AllowFieldEditing() {
         email: $('#p-email').val(),
         password: $('#p-password').val(),
         description: $('#p-description').val(),
+        professionalBackground: $('#p-background').val(),
         linkedIn: $('#p-linkedin').val(),
         picture: $('#p-picture').val()
     };
@@ -707,6 +711,7 @@ function AllowFieldEditing() {
     $('#email-warning').prop("hidden", false);
     $('#p-password').prop("readonly", false);
     $('#p-description').prop("readonly", false);
+    $('#p-background').prop("readonly", false);
     $('#p-linkedin').prop("readonly", false);
 
     $('#p-button').text("Confirmar cambios");
@@ -726,6 +731,7 @@ function EditUser() {
         name: $('#p-name2').val(),
         password: $('#p-password').val(),
         description: $('#p-description').val(),
+        professionalBackground: $('#p-background').val(),
         linkedIn: $('#p-linkedin').val(),
         picture: $('#p-picture').attr("src")
     }
@@ -743,11 +749,13 @@ function EditUser() {
             $('#email-warning').prop("hidden", true);
             $('#p-password').prop("readonly", true);
             $('#p-description').prop("readonly", true);
+            $('#p-background').prop("readonly", true);
             $('#p-linkedin').prop("readonly", true);
 
             $('#p-button').text("Editar");
             $('#p-cancel-button').prop("hidden", true);
             $('#p-upload-img-label').prop("hidden", true);
+            $('#p-delete-button').prop("hidden", false);
 
             $('#p-email').css("margin-bottom", "30px");
 
@@ -764,7 +772,7 @@ function EditUser() {
         error: function (errorMessage) {
             toastr.error('Algo salió mal');
             setLoading(false);
-
+            CancelEditing();
         }
     });
     
@@ -777,6 +785,7 @@ function CancelEditing() {
     $('#email-warning').prop("hidden", true);
     $('#p-password').prop("readonly", true);
     $('#p-description').prop("readonly", true);
+    $('#p-background').prop("readonly", true);
     $('#p-linkedin').prop("readonly", true);
 
     $('#p-button').text("Editar");
@@ -843,6 +852,8 @@ function DeleteAccount() {
 
                 }
             });
+        } else if (result.dismiss === Swal.DismissReason.cancel) {
+            setLoading(false);
         }
     });
 }

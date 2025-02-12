@@ -3,6 +3,8 @@ using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
 using StudentApp.Models.DAO;
 using StudentApp.Models.Entity;
+using System.Text;
+using System.Text.Json;
 
 namespace StudentApp.Controllers
 {
@@ -11,11 +13,13 @@ namespace StudentApp.Controllers
         private readonly ILogger<UserController> _logger;
         private readonly IConfiguration _configuration;
         UserDAO userDAO;
+        readonly string API_URL;
 
         public UserController(ILogger<UserController> logger, IConfiguration configuration)
         {
             _logger = logger;
             _configuration = configuration;
+            API_URL = _configuration["EnvironmentVariables:API_URL"];
 
             userDAO = new UserDAO(_configuration);
 
@@ -131,38 +135,53 @@ namespace StudentApp.Controllers
         }
 
 		[HttpGet]
-		public IActionResult GetByEmail([FromQuery] string email)
+		public async Task<ActionResult<User>> GetByEmail([FromQuery] string email)
 		{
-			try
-			{
-				User user = userDAO.GetByEmail(email);
-
-				if (user != null)
-				{
-					return Ok(user);
-				}
-
-				return BadRequest();
-			}
-			catch (SqlException e)
-			{
-				return StatusCode(500, new { message = "An error occurred while retrieving the user.", error = e.Message });
-			}
-
-		}
-
-        [HttpPut]
-        public IActionResult UpdateUser([FromBody] User user)
-        {
             try
             {
-                return Ok(userDAO.Update(user));
+                using (var client = new HttpClient())
+                {
+                    var response = await client.GetAsync($"{API_URL}/api/User/GetUserByEmail/{email}");
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        var user = await response.Content.ReadFromJsonAsync<User>();
+                        return Ok(user);
+                    }
+                    return NotFound();
+                }
             }
-            catch (SqlException e)
+            catch (Exception ex)
             {
-                return BadRequest(e.Message);
+                return StatusCode(500, ex.Message);
+            }
+
+        }
+
+        [HttpPut]
+        public async Task<IActionResult> UpdateUser([FromBody] User user)
+        {
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri($"{API_URL}/api/User/");
+                var putTask = client.PutAsJsonAsync("PutUser/" + user.Id, user);
+                putTask.Wait();
+
+                var result = putTask.Result;
+
+                if (result.IsSuccessStatusCode)
+                {
+                    return new JsonResult(result);
+                    // TODO: return new JsonResult(student);
+                }
+                else
+                {
+                    // TODO should be customized to meet the client's needs
+                    return new JsonResult(result);
+                }
             }
         }
+
 
         [HttpDelete]
         public IActionResult DeleteUser([FromQuery] string id)
