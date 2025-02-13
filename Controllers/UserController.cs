@@ -161,25 +161,42 @@ namespace StudentApp.Controllers
         [HttpPut]
         public async Task<IActionResult> UpdateUser([FromBody] User user)
         {
-            using (var client = new HttpClient())
+            try
             {
-                client.BaseAddress = new Uri($"{API_URL}/api/User/");
-                var putTask = client.PutAsJsonAsync("PutUser/" + user.Id, user);
-                putTask.Wait();
-
-                var result = putTask.Result;
-
-                if (result.IsSuccessStatusCode)
+                using (var client = new HttpClient())
                 {
-                    return new JsonResult(result);
-                    // TODO: return new JsonResult(student);
-                }
-                else
-                {
-                    // TODO should be customized to meet the client's needs
-                    return new JsonResult(result);
+                    client.BaseAddress = new Uri($"{API_URL}/api/User/");
+                    var putTask = client.PutAsJsonAsync("PutUser/" + user.Id, user);
+                    putTask.Wait();
+
+                    var result = putTask.Result;
+
+                    if (result.IsSuccessStatusCode)
+                    {
+                        var updatedUser = await result.Content.ReadFromJsonAsync<User>();
+                        return Json(new
+                        {
+                            success = true,
+                            user = updatedUser
+                        });
+                    }
+                    else
+                    {
+                        var errorContent = await result.Content.ReadAsStringAsync();
+                        return Json(new
+                        {
+                            success = false,
+                            message = "No se pudo actualizar el usuario",
+                            details = errorContent
+                        });
+                    }
                 }
             }
+            catch(Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
+            
         }
 
 
@@ -188,13 +205,33 @@ namespace StudentApp.Controllers
         {
             try
             {
-                var result = userDAO.Delete(id);
-                return Ok(new { success = true, result = result });
+                using (var client = new HttpClient())
+                {
+                    client.BaseAddress = new Uri($"{API_URL}/api/User/");
+
+                    var deleteTask = client.DeleteAsync("DeleteUser/" + id);
+                    deleteTask.Wait();
+
+                    var result = deleteTask.Result;
+                    if (result.IsSuccessStatusCode)
+                    {
+                        return new JsonResult(result);
+                    }
+                    else
+                    {
+                        return Json(new
+                        {
+                            success = false,
+                            message = "No se pudo eliminar el usuario"
+                        });
+                    }
+                }
             }
-            catch (SqlException e)
+            catch(Exception ex)
             {
-                return BadRequest(new { success = false, message = e.Message });
+                return StatusCode(500, ex.Message);
             }
+            
         }
     }
 }
