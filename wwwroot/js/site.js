@@ -406,6 +406,8 @@ function LoadAdvisementResponses(advisementId) {
 }
 function GetAdvisementsByUser(email) {
 
+    // se usa en professor api
+
     setLoading(true);
 
     $.ajax({
@@ -441,6 +443,7 @@ function GetAdvisementsByUser(email) {
 }
 
 function GetPublicAdvisements(email) {
+    // se usa en professor api
 
     setLoading(true);
 

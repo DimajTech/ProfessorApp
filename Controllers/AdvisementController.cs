@@ -11,12 +11,13 @@ namespace StudentApp.Controllers
         private readonly IConfiguration _configuration;
 
         AdvisementDAO advisementDAO;
-
+        readonly string API_URL;
         public AdvisementController(ILogger<AdvisementController> logger, IConfiguration configuration)
         {
 
             _logger = logger;
             _configuration = configuration;
+            API_URL = _configuration["EnvironmentVariables: API_URL"];
             advisementDAO = new AdvisementDAO(_configuration);
         }
 
@@ -44,57 +45,96 @@ namespace StudentApp.Controllers
 
 
         [HttpGet]
-
-        public IActionResult GetAdvisementById([FromQuery] string id)
+        public async Task<IActionResult> GetAdvisementById([FromQuery] string advisementId)
         {
             try
             {
-                return Ok(advisementDAO.GetById(id));
+                using (var client = new HttpClient())
+                {
+                  
+                    var response = await client.GetAsync($"{API_URL}/api/Advisement/GetAdvisementById/{advisementId}");
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        var advisement = await response.Content.ReadFromJsonAsync<Advisement>();
+                        return Ok(advisement);
+                    }
+                    else
+                    {
+                        return StatusCode((int)response.StatusCode, new { message = "Error fetching advisement", error = response.ReasonPhrase });
+                    }
+                }
             }
-            catch (SqlException e)
+            catch (HttpRequestException e)
             {
-                return StatusCode(500, new { message = "An error occurred", error = e.Message });
+                return StatusCode(500, new { message = "Request error", error = e.Message });
             }
             catch (Exception e)
             {
-                return StatusCode(500, new { message = "An unexpected error occurred", error = e.Message });
+                return StatusCode(500, new { message = "Unexpected error", error = e.Message });
             }
         }
 
 
         [HttpGet]
-        public IActionResult GetAdvisementsByUser([FromQuery] string email)
+        public async Task<IActionResult> GetAdvisementsByUser([FromQuery] string email)
         {
             try
             {
-                return Json(advisementDAO.GetByUser(email));
+                using (var client = new HttpClient())
+                {
+                   
+                    var response = await client.GetAsync($"{API_URL}/api/Advisement/GetMyAdvisements/{email}");
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        var advisements = await response.Content.ReadFromJsonAsync<List<Advisement>>();
+                        return Ok(advisements);
+                    }
+                    else
+                    {
+                        return StatusCode((int)response.StatusCode, new { message = "Error fetching advisements", error = response.ReasonPhrase });
+                    }
+                }
             }
-            catch (SqlException e)
+            catch (HttpRequestException e)
             {
-                return StatusCode(500, new { message = "An error occurred", error = e.Message });
+                return StatusCode(500, new { message = "Request error", error = e.Message });
             }
             catch (Exception e)
             {
-                return StatusCode(500, new { message = "An unexpected error occurred", error = e.Message });
+                return StatusCode(500, new { message = "Unexpected error", error = e.Message });
             }
-
         }
 
-
         [HttpGet]
-        public IActionResult GetPublicAdvisements([FromQuery] string email)
+        public async Task<IActionResult> GetPublicAdvisements([FromQuery] string email)
         {
             try
             {
-                return Json(advisementDAO.GetPublicAdvisements(email));
+                using (var client = new HttpClient())
+                {
+               
+                    var response = await client.GetAsync($"{API_URL}/api/Advisement/GetPublicAdvisements/{email}");
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        var advisements = await response.Content.ReadFromJsonAsync<List<Advisement>>();
+                        return Ok(advisements);
+                    }
+                    else
+                    {
+                        return StatusCode((int)response.StatusCode, new { message = "Error fetching public advisements", error = response.ReasonPhrase });
+                    }
+                }
             }
-            catch (SqlException e)
+            catch (HttpRequestException e)
             {
-                return StatusCode(500, new { message = "An error occurred", error = e.Message });
+                return StatusCode(500, new { message = "Request error", error = e.Message });
             }
             catch (Exception e)
             {
-                return StatusCode(500, new { message = "An unexpected error occurred", error = e.Message });
+                return StatusCode(500, new { message = "Unexpected error", error = e.Message });
             }
         }
 
