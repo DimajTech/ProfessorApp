@@ -77,14 +77,14 @@ namespace StudentApp.Controllers
 
 
         [HttpGet]
-        public async Task<IActionResult> GetAdvisementsByUser([FromQuery] string email)
+        public async Task<IActionResult> GetAdvisementsByUser([FromQuery] string professorEmail)
         {
             try
             {
                 using (var client = new HttpClient())
                 {
                    
-                    var response = await client.GetAsync($"{API_URL}/api/Advisement/GetMyAdvisements/{email}");
+                    var response = await client.GetAsync($"{API_URL}/api/Advisement/GetMyAdvisements/{professorEmail}");
 
                     if (response.IsSuccessStatusCode)
                     {
@@ -108,14 +108,14 @@ namespace StudentApp.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetPublicAdvisements([FromQuery] string email)
+        public async Task<IActionResult> GetPublicAdvisements([FromQuery] string professorEmail)
         {
             try
             {
                 using (var client = new HttpClient())
                 {
                
-                    var response = await client.GetAsync($"{API_URL}/api/Advisement/GetPublicAdvisements/{email}");
+                    var response = await client.GetAsync($"{API_URL}/api/Advisement/GetPublicAdvisements/{professorEmail}");
 
                     if (response.IsSuccessStatusCode)
                     {
@@ -149,6 +149,7 @@ namespace StudentApp.Controllers
                 return StatusCode(500, new { message = "An error occurred", error = e.Message });
             }
         }
+
         [HttpPost]
         public IActionResult AddNewResponse([FromBody] ResponseAdvisement response)
         {

@@ -69,7 +69,7 @@ namespace StudentApp.Controllers
                 {
                     if (user.RegistrationStatus == "accepted")
                     {
-                        if (user.IsActive)
+                        if (user.IsActive == true)
                         {
                             if (user.Role == "professor")
                             {

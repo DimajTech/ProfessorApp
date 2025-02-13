@@ -7,8 +7,8 @@
         private string name;
         private string professorId;
         private string semester;
-        private int year;
-        private bool isActive;
+        private int? year;
+        private bool? isActive;
 
         public Course()
         {
@@ -37,7 +37,7 @@
         public string Name { get => name; set => name = value; }
         public string ProfessorId { get => professorId; set => professorId = value; }
         public string Semester { get => semester; set => semester = value; }
-        public int Year { get => year; set => year = value; }
-        public bool IsActive { get => isActive; set => isActive = value; }
+        public int? Year { get => year; set => year = value; }
+        public bool? IsActive { get => isActive; set => isActive = value; }
     }
 }

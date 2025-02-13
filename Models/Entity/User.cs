@@ -15,8 +15,8 @@ namespace StudentApp.Models.Entity
 		private string linkedIn;
 		private string professionalBackground;
 		private string password;
-		private bool isActive;
-		private DateTime createdAt;
+		private bool? isActive;
+		private DateTime? createdAt;
 		private string registrationStatus;
 		private string role;
 
@@ -61,8 +61,8 @@ namespace StudentApp.Models.Entity
 		public string LinkedIn { get => linkedIn; set => linkedIn = value; }
 		public string ProfessionalBackground { get => professionalBackground; set => professionalBackground = value; }
 		public string Password { get => password; set => password = value; }
-		public bool IsActive { get => isActive; set => isActive = value; }
-		public DateTime CreatedAt { get => createdAt; set => createdAt = value; }
+		public bool? IsActive { get => isActive; set => isActive = value; }
+		public DateTime? CreatedAt { get => createdAt; set => createdAt = value; }
 		public string RegistrationStatus { get => registrationStatus; set => registrationStatus = value; }
 		public string Role { get => role; set => role = value; }
 	}
