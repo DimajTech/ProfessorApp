@@ -10,11 +10,143 @@
 
 
 
-<section id="myAppointments-appointment" style="margin: 80px">
+
+<section id="myAppointments-daily" style="margin: 80px">
+    <div>
+        <button class="filter-button" onclick="loadSection('view/news')">Back</button>
+    </div>
+
     <div class="w3-container-appointment">
         <div class="row">
             <div class="section-title-appointment">
                 <h2>Mis citas</h2>
+                <div>
+                    <label class="label-appointment" ">Fecha:</label>
+                    <input type="date" id="datetime" class="input-appointment" style="width:auto" />
+                    <button type="button" class="filter-button" onclick="GetAppointmentsByDate()">Filtrar</button>
+                </div>
+            </div>
+
+            <div class="col-md-12 col-sm-12">
+
+                <div class="table-responsive-appointment">
+
+                    <table class="w3-table-all-appointment" id="dailyappointments-table">
+
+                        <thead>
+
+                            <tr class="w3-black">
+
+                                <th>
+                                    Fecha
+                                </th>
+                                <th>
+                                    Hora
+                                </th>
+                                <th>
+                                    Modo
+                                </th>
+                                <th>
+                                    Estado
+                                </th>
+                                <th>
+                                    Estudiante
+                                </th>
+                                <th>
+                                    Correo
+                                </th>
+                                <th>
+                                    Curso
+                                </th>
+                                <th>
+                                    Comentario del profesor
+                                </th>
+                                
+                            </tr>
+
+                        </thead>
+
+                        <tbody id="dailyappointments-tbody">
+                        </tbody>
+
+                    </table>
+                    <p id="noDailyAppointmentsMessage1" style="display: none;">No se encontraron citas registradas para ese día</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+<section id="myAppointments-request" style="margin: 80px">
+    <div class="w3-container-appointment">
+        <div class="row">
+            <div class="section-title-appointment">
+                <h2>Solicitudes pendientes</h2>
+            </div>
+
+            <div class="col-md-12 col-sm-12">
+
+                <div class="table-responsive-appointment">
+
+                    <table class="w3-table-all-appointment" id="requestappointments-table">
+
+                        <thead>
+
+                            <tr class="w3-black">
+                                <th>
+                                    ID
+                                </th>
+                                <th>
+                                    Fecha
+                                </th>
+                                <th>
+                                    Hora
+                                </th>
+                                <th>
+                                    Modo
+                                </th>
+                                <th>
+                                    Estado
+                                </th>
+                                <th>
+                                    Estudiante
+                                </th>
+                                <th>
+                                    Correo
+                                <th>
+                                    Curso
+                                </th>
+                                <th>
+                                    Comentario del profesor
+                                </th>
+                                <th>
+                                    Revisión
+                                </th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody id="myrequest-tbody">
+                        </tbody>
+
+                    </table>
+                    <p id="noRequestAppointmentsMessage" style="display: none;">No se encontraron citas registradas</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="myAppointments-appointment" style="margin: 80px">
+    <div class="w3-container-appointment">
+        <div class="row">
+            <div class="section-title-appointment">
+                <h2>Revisadas</h2>
             </div>
 
             <div class="col-md-12 col-sm-12">
@@ -40,10 +172,17 @@
                                     Estado
                                 </th>
                                 <th>
+                                    Estudiante
+                                </th>
+                                <th>
+                                    Correo
+                                <th>
                                     Curso
                                 </th>
                                 <th>
                                     Comentario del profesor
+                                </th>
+
                                 </th>
                             </tr>
 
@@ -53,48 +192,9 @@
                         </tbody>
 
                     </table>
-                    <p id="noAppointmentsMessage" style="display: none;">No se encontraron citas registradas</p>
                 </div>
             </div>
 
         </div>
     </div>
 </section>
-<section class="section-appointment">
-    <form class="form-appointment">
-        <h2 class="h2-appointment">Agendar Hora Consulta</h2>
-        <div>
-            <label class="label-appointment" for="course">
-                Curso:
-            </label>
-            <select id="course" class="select-appointment" style="width:100%;">
-            </select>
-        </div>
-
-
-        <div>
-            <label class="label-appointment">Fecha:</label>
-            <input type="date" id="datetime" class="input-appointment" />
-        </div>
-
-        <div>
-            <label class="label-appointment">Hora:</label>
-            <select id="time" style="width:100%;" class="input-appointment" size="1">
-            </select>
-
-        </div>
-
-        <div>
-            <label class="label-appointment">Modalidad</label>
-            <select id="mode" style="width:100%;" class="input-appointment">
-                <option value="1">Virtual</option>
-                <option value="2">Presencial</option>
-            </select>
-        </div>
-        <button type="button" class="button button-registrar" onclick="AddAppointment()">Registrar</button>
-        <button type="reset" class="button button-cancelar">Cancelar</button>
-
-    </form>
-</section>
-
-
