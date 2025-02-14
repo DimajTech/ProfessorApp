@@ -12,8 +12,6 @@ namespace StudentApp.Controllers
         private readonly ILogger<AppointmentController> _logger;
         private readonly IConfiguration _configuration;
 
-        AppointmentDAO appointmentDAO;
-
         private readonly string API_URL;
 
         public AppointmentController(ILogger<AppointmentController> logger, IConfiguration configuration)
@@ -21,7 +19,6 @@ namespace StudentApp.Controllers
 
             _logger = logger;
             _configuration = configuration;
-            appointmentDAO = new AppointmentDAO(_configuration);
 
             API_URL = _configuration["EnvironmentVariables:API_URL"];
         }
@@ -98,6 +95,82 @@ namespace StudentApp.Controllers
             return appointments;
         }
 
+        [HttpGet]
+        [Route("Appointment/GetAppointmentById/{appointmentID}")]
+        public IActionResult GetAppointmentById(string appointmentID)
+        {
+            Appointment appointment = null;
+
+            try
+            {
+                using (var client = new HttpClient())
+                {
+                    client.BaseAddress = new Uri(API_URL);
+
+                    var getTask = client.GetAsync($"api/Appointment/GetAppointmentById/{appointmentID}");
+                    getTask.Wait();
+
+                    var result = getTask.Result;
+
+                    if (result.IsSuccessStatusCode)
+                    {
+                        var readTask = result.Content.ReadAsAsync<Appointment>();
+                        readTask.Wait();
+                        // Lee los datos provenientes de la API
+                        appointment = readTask.Result;
+                    }
+                }
+            }
+            catch
+            {
+                ModelState.AddModelError(string.Empty, "Server error. Please contact an administrator.");
+            }
+
+            return Ok(appointment);
+        }
+
+        [HttpPut]
+        public async Task<IActionResult> UpdateAppointment([FromBody] Appointment appointment)
+        {
+            try
+            {
+                using (var client = new HttpClient())
+                {
+                    client.BaseAddress = new Uri($"{API_URL}/api/Appointment/");
+                    var putTask = client.PutAsJsonAsync("PutAppointment/", appointment);
+                    putTask.Wait();
+
+                    var result = putTask.Result;
+
+                    if (result.IsSuccessStatusCode)
+                    {
+                        var updatedAppointment = await result.Content.ReadFromJsonAsync<Appointment>();
+                        return Json(new
+                        {
+                            success = true,
+                            appointment = updatedAppointment
+                        });
+                    }
+                    else
+                    {
+                        var errorContent = await result.Content.ReadAsStringAsync();
+                        return Json(new
+                        {
+                            success = false,
+                            message = "No se pudo actualizar la cita",
+                            details = errorContent
+                        });
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
+        }
+
+
+        /*
         public IActionResult CreateNewAppointment([FromBody] Appointment appointment)
         {
             try
@@ -130,6 +203,7 @@ namespace StudentApp.Controllers
             return Json(appointmentDAO.GetAll(email));
 
         }
+        */
 
     }
 }

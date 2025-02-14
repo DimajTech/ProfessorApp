@@ -136,11 +136,22 @@ function Add() {
 //TODO: Hacer que al inicio no muestre un "No se encontraron citas"
 function GetAppointmentsByDate() {
     const userId = localStorage.getItem("userId");
+
+    let today = new Date().toISOString().split('T')[0];
+
+    if (!$('#datetime').val()?.trim()) {
+
+        $('#datetime').val(today);
+    }
+
+
     var appointmentFilter = {
         date: $('#datetime').val(),
-        professorId: userId, //TODO cambiar al de la cookie
-        state: "pending" //Cambiar para cada tabla
+        professorId: userId, 
+        state: "accepted" 
     };
+
+    console.log(appointmentFilter);
 
     $.ajax({
         url: "/Appointment/GetAppointments",
@@ -219,7 +230,7 @@ function GetPendingAppointments() {
                 htmlTable += '<td>' + (item.user?.email || 'Sin email') + '</td>';
                 htmlTable += '<td>' + (item.course?.name || 'Desconocido') + '</td>';
                 htmlTable += '<td>' + (item.professorComment || 'Sin comentarios') + '</td>';
-                htmlTable += `<td><a class="filter-button" onclick="loadSection('view/requestappointment/${item.id}')">Revisar</a></td>`;
+                htmlTable += `<td><a class="filter-button"  style="background-color: #66c5e3 !important" onclick="loadSection('view/requestappointment/${item.id}')">Revisar</a></td>`;
                 htmlTable += '</tr>';
             });
 
@@ -231,13 +242,11 @@ function GetPendingAppointments() {
         }
     });
 }
-function LoadReviewedAppointment(id) {
+function LoadAppointmentDetails(id) {
     $.ajax({
-        url: "/Appointment/GetAppointmentById",
+        url: "/Appointment/GetAppointmentById/"+id,
         type: "GET",
-        data: { id: id },
         contentType: "application/json;charset=utf-8",
-        dataType: "json",
         success: function (result) {
             if (result && result.date) {
                 // Separa la fecha y hora si el formato es correcto
@@ -250,18 +259,92 @@ function LoadReviewedAppointment(id) {
 
             $("#id").text(result.id || "ID no disponible");
             $("#course").text(result.course?.name || "Curso no disponible");
-            $("#student").text(result.user
-            );
+            $("#student").text(result.user.name);
             $("#mode").text((result.mode == '1' ? 'Virtual' : 'Presencial'));
             $("#status").text(result.status || "Estado no disponible");
+
+            htmlBtns = `        
+                    <div style="display: flex; justify-content: center; gap: 10px;">
+                    <button type="button" class="button button-registrar" onclick="UpdateAppointment('${result.id}', true)">Aceptar</button>
+                    <button type="reset" class="button button-cancelar" onclick="UpdateAppointment('${result.id}', false)">Rechazar</button>
+                    </div>
+                        `
+            $("#appointment-details-container").append(htmlBtns);
+
         },
         error: function (errorMessage) {
             console.error("Error al cargar la cita:", errorMessage);
-            alert("Ocurrió un error al cargar la información de la cita.");
+
+            toastr.error("Ocurrió un error al cargar la cita o ha sido borrada");
+            loadSection("view/appointments");
         }
     });
 }
 
+
+function UpdateAppointment(appointmentId, isAccepted) {
+
+
+    var text = ($('#appointment-details-text-area').val() || "").trim();
+
+    if (text.length > 0) {
+        $("#appointment-details-text-area").css("border-color", "black");
+
+        const userID = localStorage.getItem("userId");
+
+        var updatedAppointment = {
+            id: appointmentId,
+            status: isAccepted ? "accepted" : "denied",
+            professorComment: text,
+            user: {
+                id: userID
+            }
+        };
+
+        setLoading(true);
+        $.ajax({
+            url: "/Appointment/UpdateAppointment",
+            type: "PUT",
+            data: JSON.stringify(updatedAppointment),
+            contentType: "application/json;charset=utf-8",
+            dataType: "json",
+            success: function (result) {
+
+                if (result.success) {
+                    toastr.options.positionClass = 'toast-bottom-right';
+                    toastr.success('Cambos registrados con éxito');
+                    loadSection("view/appointment")
+
+                } else {
+
+                    toastr.options.positionClass = 'toast-bottom-right';
+                    toastr.error(result.message);
+                }
+
+
+                setLoading(false);
+            },
+            error: function (errorMessage) {
+                console.log(errorMessage.responseText);
+
+                toastr.options.positionClass = 'toast-bottom-right';
+                toastr.error('Ha ocurrido un error al agregar los cambios, intente de nuevo más tarde.');
+
+                setLoading(false);
+
+            }
+        });
+    } else {
+
+        toastr.options.positionClass = 'toast-bottom-right';
+        toastr.error('Por favor rellene todos los campos');
+
+        $("#appointment-details-text-area").css("border-color", "red");
+
+    }
+
+
+}
 //trae rechazadas y pendientes
 function GetReviewedAppointments() {
     const userId = localStorage.getItem("userId");
@@ -457,7 +540,7 @@ function GetAdvisementsByUser(email) {
                 userHtmlTable += '<td>' + item.course.code + '</td>';
                 userHtmlTable += '<td>' + item.user.name + '</td>';
                 userHtmlTable += '<td>' + new Date(item.createdAt).toLocaleDateString() + '</td>';
-                userHtmlTable += `<td><button class="btn btn-info" onclick="loadSection('view/advisementdetails/${item.id}')">Ver más</button></td>`;
+                userHtmlTable += `<td><button class="btn btn-info" style="background-color: #66c5e3 !important; color: white;" onclick="loadSection('view/advisementdetails/${item.id}')">Ver más</button></td>`;
                 userHtmlTable += '</tr>';
             });
 
@@ -494,7 +577,7 @@ function GetPublicAdvisements(email) {
                 publicHtmlTable += '<td>' + item.course.code + '</td>';
                 publicHtmlTable += '<td>' + item.user.name + '</td>';
                 publicHtmlTable += '<td>' + new Date(item.createdAt).toLocaleDateString() + '</td>';
-                publicHtmlTable += `<td><button class="btn btn-info" onclick="loadSection('view/advisementdetails/${item.id}')">Ver más</button></td>`;
+                publicHtmlTable += `<td><button class="btn btn-info"  style="background-color: #66c5e3 !important; color: white;" onclick="loadSection('view/advisementdetails/${item.id}')">Ver más</button></td>`;
                 publicHtmlTable += '</tr>';
             });
 
@@ -1023,8 +1106,6 @@ function LoadNewsComments(pieceOfNewsID) {
 
 
 
-            totalResponses = newsComments.length;
-
             //Caja para comentar
             var htmlContent = `<br><h3>Comentarios</h3>`;
             $("#commentsContainer>").html(`<div class="loader"></div>`);
@@ -1043,13 +1124,19 @@ function LoadNewsComments(pieceOfNewsID) {
             `;
 
             let index = 0;
-            //Comentarios
-            newsComments.forEach(comment => {
+            totalResponses = 0;
 
-                totalResponses += comment.totalResponses
+            if (newsComments) {
+                totalResponses = newsComments.length;
 
-                index++;
-                htmlContent += `
+
+                //Comentarios
+                newsComments.forEach(comment => {
+
+                    totalResponses += comment.totalResponses
+
+                    index++;
+                    htmlContent += `
                     <div class="comment-card">
                         <div class="comment-header">
                             <div>
@@ -1089,9 +1176,11 @@ function LoadNewsComments(pieceOfNewsID) {
                         </div>
                 `;
 
-                LoadNewsCommentsResponse(comment.id, index + "-response-news-container", index + "-response-counter");
+                    LoadNewsCommentsResponse(comment.id, index + "-response-news-container", index + "-response-counter");
 
-            });
+                });
+            }
+
 
             $('#commentsContainer').html(htmlContent);
             $('#totalComments').html(totalResponses + " Comentario(s)");

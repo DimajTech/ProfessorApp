@@ -123,7 +123,7 @@ function loadSection(section) {
                     break;
                 case "view/requestappointment":
                     if (id) {
-                        LoadReviewedAppointment(id);
+                        LoadAppointmentDetails(id);
                     }
                     break;
 

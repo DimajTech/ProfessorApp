@@ -3,10 +3,10 @@
 *@
 @{
 }
-<div>
-    <button class="filter-button" onclick="loadSection('view/appointment')">Back</button>
-</div>
-<section class="section-appointment">
+<button onclick="loadSection('view/appointment')" class="button-news">
+    ← Volver
+</button>
+<section class="section-appointment" id="appointment-details-container">
     <form class="form-appointment">
         <h2 class="h2-appointment">Detalles Solicitud</h2>
         <input type="text" name="id" id="id" hidden>
@@ -44,15 +44,10 @@
 
         <div>
             <label class="label-appointment">Comentario:</label>
-            <textarea class="styled-textarea" placeholder="Escribe aquí..."></textarea>
+            <textarea class="styled-textarea" placeholder="Escribe aquí..." id="appointment-details-text-area"></textarea>
 
-        </div>
-        <div style="display: flex; justify-content: center; gap: 10px;">
-            <button type="button" class="button button-registrar" onclick="AddAppointment()">Aceptar</button>
-            <button type="reset" class="button button-cancelar">Rechazar</button>
         </div>
 
         
-
     </form>
 </section>

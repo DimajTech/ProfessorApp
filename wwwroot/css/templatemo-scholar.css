@@ -2231,22 +2231,22 @@ Secciones Propias
 }
 
 .filter-button {
-  background-color: #2C3E50;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #66c5e3 !important;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.filter-button:hover {
-  background-color: #1A252F;
-  transform: translateY(-2px);
-  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
-}
+    .filter-button:hover {
+        background-color: #66c5e3;
+        transform: translateY(-2px);
+        box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+    }
 
 .filter-button:active {
   transform: translateY(0px);
