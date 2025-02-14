@@ -120,53 +120,104 @@ namespace StudentApp.Controllers
             }
         }
 
-
-		[HttpGet]
-		public IActionResult GetByEmail([FromQuery] string email)
-		{
-			try
-			{
-				User user = userDAO.GetByEmail(email);
-
-				if (user != null)
-				{
-					return Ok(user);
-				}
-
-				return BadRequest();
-			}
-			catch (SqlException e)
-			{
-				return StatusCode(500, new { message = "An error occurred while retrieving the user.", error = e.Message });
-			}
-
-		}
-
-        [HttpPut]
-        public IActionResult UpdateUser([FromBody] User user)
+        [HttpGet]
+        public async Task<ActionResult<User>> GetByEmail([FromQuery] string email)
         {
             try
             {
-                return Ok(userDAO.Update(user));
+                using (var client = new HttpClient())
+                {
+                    var response = await client.GetAsync($"{API_URL}/api/User/GetUserByEmail/{email}");
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        var user = await response.Content.ReadFromJsonAsync<User>();
+                        return Ok(user);
+                    }
+                    return NotFound();
+                }
             }
-            catch (SqlException e)
+            catch (Exception ex)
             {
-                return BadRequest(e.Message);
+                return StatusCode(500, ex.Message);
             }
+
         }
+
+        [HttpPut]
+        public async Task<IActionResult> UpdateUser([FromBody] User user)
+        {
+            try
+            {
+                using (var client = new HttpClient())
+                {
+                    client.BaseAddress = new Uri($"{API_URL}/api/User/");
+                    var putTask = client.PutAsJsonAsync("PutUser/" + user.Id, user);
+                    putTask.Wait();
+
+                    var result = putTask.Result;
+
+                    if (result.IsSuccessStatusCode)
+                    {
+                        var updatedUser = await result.Content.ReadFromJsonAsync<User>();
+                        return Json(new
+                        {
+                            success = true,
+                            user = updatedUser
+                        });
+                    }
+                    else
+                    {
+                        var errorContent = await result.Content.ReadAsStringAsync();
+                        return Json(new
+                        {
+                            success = false,
+                            message = "No se pudo actualizar el usuario",
+                            details = errorContent
+                        });
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
+
+        }
+
 
         [HttpDelete]
         public IActionResult DeleteUser([FromQuery] string id)
         {
             try
             {
-                var result = userDAO.Delete(id);
-                return Ok(new { success = true, result = result });
+                using (var client = new HttpClient())
+                {
+                    client.BaseAddress = new Uri($"{API_URL}/api/User/");
+
+                    var deleteTask = client.DeleteAsync("DeleteUser/" + id);
+                    deleteTask.Wait();
+
+                    var result = deleteTask.Result;
+                    if (result.IsSuccessStatusCode)
+                    {
+                        return new JsonResult(result);
+                    }
+                    else
+                    {
+                        return Json(new
+                        {
+                            success = false,
+                            message = "No se pudo eliminar el usuario"
+                        });
+                    }
+                }
             }
-            catch (SqlException e)
+            catch (Exception ex)
             {
-                return BadRequest(new { success = false, message = e.Message });
+                return StatusCode(500, ex.Message);
             }
+
         }
     }
 }
