@@ -25,7 +25,7 @@ namespace StudentApp.Controllers
         {
             return View();
         }
-
+        /*
         [HttpPost]
         public IActionResult CreateNewAdvisement([FromBody] Advisement advisement)
         {
@@ -42,7 +42,7 @@ namespace StudentApp.Controllers
                 return StatusCode(500, new { message = "An unexpected error occurred", error = e.Message });
             }
         }
-
+        */
 
         [HttpGet]
         public async Task<IActionResult> GetAdvisementById([FromQuery] string id)
@@ -145,26 +145,71 @@ namespace StudentApp.Controllers
         {
             try
             {
-                return Ok(advisementDAO.GetAdvisementResponsesById(id));
+                using (var client = new HttpClient())
+                {
+                    client.BaseAddress = new Uri(API_URL);
+
+                    var getTask = client.GetAsync($"api/Advisement/GetResponsesByAdvisement/{id}");
+
+                    getTask.Wait();
+
+                    var result = getTask.Result;
+
+
+                    if (result.IsSuccessStatusCode)
+                    {
+                        var readTask = result.Content.ReadAsAsync<List<ResponseAdvisement>>();
+                        readTask.Wait();
+
+                        return Ok(readTask.Result);
+                    }
+                    else
+                    {
+                        return StatusCode((int)result.StatusCode, new { message = "Error getting responses" });
+                    }
+                }
             }
-            catch (SqlException e)
+            catch (HttpRequestException e)
             {
-                return StatusCode(500, new { message = "An error occurred", error = e.Message });
+                return StatusCode(500, new { message = "Server error", error = e.Message });
             }
         }
-
         [HttpPost]
         public IActionResult AddNewResponse([FromBody] ResponseAdvisement response)
         {
             try
             {
+                using (var client = new HttpClient())
+                {
+                    client.BaseAddress = new Uri(API_URL);
 
-                return Ok(advisementDAO.InsertNewResponse(response));
+
+                    var postTask = client.PostAsJsonAsync("/api/Advisement/CreateResponseAdvisement", new
+                    {
+                        AdvisementId = response.AdvisementId,
+                        UserId = response.User.Id,
+                        Text = response.Text
+                    });
+
+                    postTask.Wait();
+
+                    var result = postTask.Result;
+
+                    if (result.IsSuccessStatusCode)
+                    {
+                        var readTask = result.Content.ReadAsAsync<ResponseAdvisement>();
+                        readTask.Wait();
+                        return Ok(readTask.Result);
+                    }
+                    else
+                    {
+                        return StatusCode((int)result.StatusCode, new { message = "Failed to add response" });
+                    }
+                }
             }
-            catch (SqlException e)
+            catch (Exception e)
             {
-                ViewBag.Message = e.Message;
-                return StatusCode(500, new { message = "An error ocurred", error = e.Message });
+                return StatusCode(500, new { message = "An error occurred", error = e.Message });
             }
         }
 

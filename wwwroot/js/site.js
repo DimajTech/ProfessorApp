@@ -405,6 +405,9 @@ function LoadAdvisementResponses(advisementId) {
     });
 }
 function GetAdvisementsByUser(email) {
+
+    setLoading(true);
+
     $.ajax({
         url: "/Advisement/GetAdvisementsByUser",
         type: "GET",
@@ -424,16 +427,23 @@ function GetAdvisementsByUser(email) {
             });
 
             $('#user-advisements').html(userHtmlTable);
+
+            setLoading(false);
+
         },
         error: function (errorMessage) {
             configureToastr();
             toastr.error(errorMessage.responseJSON?.message || errorMessage.responseText || "Ocurrió un error inesperado.");
+            setLoading(false);
 
         }
     });
 }
 
 function GetPublicAdvisements(email) {
+
+    setLoading(true);
+
     $.ajax({
         url: "/Advisement/GetPublicAdvisements",
         type: "GET",
@@ -454,10 +464,12 @@ function GetPublicAdvisements(email) {
             });
 
             $('#public-advisements').html(publicHtmlTable);
+
         },
         error: function (errorMessage) {
             configureToastr();
             toastr.error(errorMessage.responseJSON?.message || errorMessage.responseText || "Ocurrió un error inesperado.");
+            setLoading(false);
 
         }
     });
