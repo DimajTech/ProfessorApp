@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
+using ProfessorApp.DTO;
 using StudentApp.Models.DAO;
 using StudentApp.Models.Entity;
 
@@ -13,12 +14,16 @@ namespace StudentApp.Controllers
 
         AppointmentDAO appointmentDAO;
 
+        private readonly string API_URL;
+
         public AppointmentController(ILogger<AppointmentController> logger, IConfiguration configuration)
         {
-            
+
             _logger = logger;
             _configuration = configuration;
             appointmentDAO = new AppointmentDAO(_configuration);
+
+            API_URL = _configuration["EnvironmentVariables:API_URL"];
         }
 
         public IActionResult Index()
@@ -26,7 +31,72 @@ namespace StudentApp.Controllers
             return View();
         }
 
+        public IEnumerable<Appointment> GetAppointments([FromBody] AppointmentsFilterDTO data)
+        {
+            IEnumerable<Appointment> appointments = null;
 
+            try
+            {
+                using (var client = new HttpClient())
+                {
+                    client.BaseAddress = new Uri($"{API_URL}/api/Appointment/GetAppointments");
+
+                    var postTask = client.PostAsJsonAsync("GetAppointments", data);
+                    postTask.Wait();
+
+                    var result = postTask.Result;
+
+                    if (result.IsSuccessStatusCode)
+                    {
+                        var readTask = result.Content.ReadAsAsync<List<Appointment>>();
+                        readTask.Wait();
+                        //lee el estudiante provenientes de la API
+                        appointments = readTask.Result;
+                    }
+
+                }
+            }
+            catch
+            {
+                ModelState.AddModelError(string.Empty, "Server error. Please contact an administrator");
+
+            }
+            return appointments;
+        }
+
+        [HttpGet]
+        [Route("Appointment/GetReviewedAppointments/{professorId}")]
+        public IEnumerable<Appointment> GetReviewedAppointments(string professorId)
+        {
+            IEnumerable<Appointment> appointments = null;
+
+            try
+            {
+                using (var client = new HttpClient())
+                {
+                    client.BaseAddress = new Uri(API_URL);
+
+                    var getTask = client.GetAsync($"api/Appointment/GetReviewedAppointments/{professorId}");
+                    getTask.Wait();
+
+                    var result = getTask.Result;
+
+                    if (result.IsSuccessStatusCode)
+                    {
+                        var readTask = result.Content.ReadAsAsync<List<Appointment>>();
+                        readTask.Wait();
+                        // Lee los datos provenientes de la API
+                        appointments = readTask.Result;
+                    }
+                }
+            }
+            catch
+            {
+                ModelState.AddModelError(string.Empty, "Server error. Please contact an administrator.");
+            }
+
+            return appointments;
+        }
 
         public IActionResult CreateNewAppointment([FromBody] Appointment appointment)
         {
@@ -46,7 +116,7 @@ namespace StudentApp.Controllers
 
 
 
-        public IActionResult GetAppointmentById([FromBody] Guid id)
+        public IActionResult GetAppointmentById([FromQuery] string id)
         {
             return Ok(appointmentDAO.GetAppointment(id));
 

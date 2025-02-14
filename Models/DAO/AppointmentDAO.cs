@@ -51,7 +51,7 @@ namespace StudentApp.Models.DAO
 
 
 
-        public Appointment GetAppointment(Guid id)
+        public Appointment GetAppointment(string id)
         {
             Appointment appointment = null;
 

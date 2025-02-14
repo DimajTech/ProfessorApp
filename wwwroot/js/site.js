@@ -129,32 +129,34 @@ function Add() {
 }
 
 //------------------------------------------------
-//--------------APPOINTMENTS SECTION--------------
+//---------APPOINTMENT SECTION---------------
 //------------------------------------------------
-function GetAppointments() {
 
-    setLoading(true);
-
-    const userEmail = localStorage.getItem("email");
+//Filter
+//TODO: Hacer que al inicio no muestre un "No se encontraron citas"
+function GetAppointmentsByDate() {
+    const userId = localStorage.getItem("userId");
+    var appointmentFilter = {
+        date: $('#datetime').val(),
+        professorId: userId, //TODO cambiar al de la cookie
+        state: "pending" //Cambiar para cada tabla
+    };
 
     $.ajax({
-        url: "/Appointment/GetAllAppointmentsByUser",
-        type: "GET",
-        data: { email: userEmail },
-        contentType: "application/json;charset=utf-8",
+        url: "/Appointment/GetAppointments",
+        type: "POST",
+        data: JSON.stringify(appointmentFilter),
+        contentType: "application/json",
         dataType: "json",
         success: function (result) {
-            setLoading(false);
-
-            if (result.length === 0) {
-                $('#myappointments-table').hide();
-                $('#noAppointmentsMessage').show();
+            if (!result || !Array.isArray(result)) {
+                $('#dailyappointments-table').hide();
+                $('#noDailyAppointmentsMessage1').show();
                 return;
             }
 
-            $('#myappointments-table').show();
-            $('#noAppointmentsMessage').hide();
-
+            $('#dailyappointments-table').show();
+            $('#noDailyAppointmentsMessage1').hide();
             var htmlTable = '';
             $.each(result, function (key, item) {
                 const [fecha, hora] = item.date.split('T');
@@ -163,117 +165,150 @@ function GetAppointments() {
                 htmlTable += '<td>' + fecha + '</td>';
                 htmlTable += '<td>' + hora + '</td>';
                 htmlTable += '<td>' + (item.mode == '1' ? 'Virtual' : 'Presencial') + '</td>';
+                htmlTable += '<td>' + item.status + '</td>';
 
-                let statusText;
-                switch (item.status) {
-                    case 'pending': statusText = 'Pendiente'; break;
-                    case 'approved': statusText = 'Aprobada'; break;
-                    case 'rejected': statusText = 'Rechazada'; break;
-                    default: statusText = item.status;
-                }
-
-                htmlTable += '<td>' + statusText + '</td>';
-                htmlTable += '<td>' + (item.course ? item.course.name : 'Desconocido') + '</td>';
-                htmlTable += '<td>' + (item.professorComment ? item.professorComment : 'Sin comentarios') + '</td>';
+                htmlTable += '<td>' + (item.user?.name || 'Desconocido') + '</td>';
+                htmlTable += '<td>' + (item.user?.email || 'Sin email') + '</td>';
+                htmlTable += '<td>' + (item.course?.name || 'Desconocido') + '</td>';
+                htmlTable += '<td>' + (item.professorComment || 'Sin comentarios') + '</td>';
                 htmlTable += '</tr>';
             });
 
+            $('#dailyappointments-tbody').html(htmlTable);
+        },
+        error: function () {
+            configureToastr();
+            toastr.error("Error al obtener citas.");
+        }
+    });
+}
+
+function GetPendingAppointments() {
+    const userId = localStorage.getItem("userId");
+    var appointmentFilter = {
+        professorId: userId,
+        state: "pending"
+    };
+
+    $.ajax({
+        url: "/Appointment/GetAppointments",
+        type: "POST",
+        data: JSON.stringify(appointmentFilter),
+        contentType: "application/json",
+        dataType: "json",
+        success: function (result) {
+            if (!result || !Array.isArray(result)) {
+                $('#requestappointments-table').hide();
+                $('#noDailyAppointmentsMessage2').show();
+                return;
+            }
+
+            $('#requestappointments-table').show();
+            $('#noDailyAppointmentsMessage2').hide();
+            var htmlTable = '';
+            $.each(result, function (key, item) {
+                const [fecha, hora] = item.date.split('T');
+
+                htmlTable += '<tr>';
+                htmlTable += '<td>' + item.id + '</td>';
+                htmlTable += '<td>' + fecha + '</td>';
+                htmlTable += '<td>' + hora + '</td>';
+                htmlTable += '<td>' + (item.mode == '1' ? 'Virtual' : 'Presencial') + '</td>';
+                htmlTable += '<td>' + item.status + '</td>';
+                htmlTable += '<td>' + (item.user?.name || 'Desconocido') + '</td>';
+                htmlTable += '<td>' + (item.user?.email || 'Sin email') + '</td>';
+                htmlTable += '<td>' + (item.course?.name || 'Desconocido') + '</td>';
+                htmlTable += '<td>' + (item.professorComment || 'Sin comentarios') + '</td>';
+                htmlTable += `<td><a class="filter-button" onclick="loadSection('view/requestappointment/${item.id}')">Revisar</a></td>`;
+                htmlTable += '</tr>';
+            });
+
+            $('#myrequest-tbody').html(htmlTable);
+        },
+        error: function () {
+            configureToastr();
+            toastr.error("Error al obtener citas.");
+        }
+    });
+}
+function LoadReviewedAppointment(id) {
+    $.ajax({
+        url: "/Appointment/GetAppointmentById",
+        type: "GET",
+        data: { id: id },
+        contentType: "application/json;charset=utf-8",
+        dataType: "json",
+        success: function (result) {
+            if (result && result.date) {
+                // Separa la fecha y hora si el formato es correcto
+                const [fecha, hora] = result.date.split('T');
+                $("#date").text(fecha);
+                $("#time").text(hora);
+            } else {
+                $("#date").text("Fecha no disponible");
+            }
+
+            $("#id").text(result.id || "ID no disponible");
+            $("#course").text(result.course?.name || "Curso no disponible");
+            $("#student").text(result.user
+            );
+            $("#mode").text((result.mode == '1' ? 'Virtual' : 'Presencial'));
+            $("#status").text(result.status || "Estado no disponible");
+        },
+        error: function (errorMessage) {
+            console.error("Error al cargar la cita:", errorMessage);
+            alert("Ocurrió un error al cargar la información de la cita.");
+        }
+    });
+}
+
+//trae rechazadas y pendientes
+function GetReviewedAppointments() {
+    const userId = localStorage.getItem("userId");
+    var professorId = userId;
+
+    $.ajax({
+        url: "/Appointment/GetReviewedAppointments/" + userId,
+        type: "GET",
+        success: function (result) {
+            if (!result || !Array.isArray(result)) {
+                $('#myappointments-table').hide();
+                $('#noDailyAppointmentsMessage3').show();
+                return;
+            }
+
+            $('#myappointments-table').show();
+            $('#noDailyAppointmentsMessage3').hide();
+            var htmlTable = '';
+            $.each(result, function (key, item) {
+                const [fecha, hora] = item.date.split('T');
+
+                htmlTable += '<tr>';
+                htmlTable += '<td>' + fecha + '</td>';
+                htmlTable += '<td>' + hora + '</td>';
+                htmlTable += '<td>' + (item.mode == '1' ? 'Virtual' : 'Presencial') + '</td>';
+                htmlTable += '<td>' + item.status + '</td>';
+                htmlTable += '<td>' + (item.user?.name || 'Desconocido') + '</td>';
+                htmlTable += '<td>' + (item.user?.email || 'Sin email') + '</td>';
+                htmlTable += '<td>' + (item.course?.name || 'Desconocido') + '</td>';
+                htmlTable += '<td>' + (item.professorComment || 'Sin comentarios') + '</td>';
+                htmlTable += '</tr>';
+            });
 
             $('#myappointments-tbody').html(htmlTable);
         },
         error: function () {
             configureToastr();
-            toastr.error("Error al obtener citas.");
-            setLoading(false);
-
+            toastr.error("Error al obtener citas revisadas.");
         }
     });
 }
 
-function setAvailableTimeAppointment() {
-    const select = document.getElementById("time");
 
-    for (let hour = 8; hour <= 20; hour++) {
-        for (let minutes of [0, 30]) {
-            let timeValue = `${hour.toString().padStart(2, "0")}:${minutes === 0 ? "00" : "30"}`;
-            let option = new Option(timeValue, timeValue);
-            select.appendChild(option);
-        }
-    }
 
-}
-function GetCourses() {
-    const now = new Date();
-    const formattedDate = now.toISOString().split('T')[0]; 
-    $('#datetime').attr('min', formattedDate);
 
-    setAvailableTimeAppointment();
 
-    $.ajax({
-        url: "/Course/GetAllCourses",
-        type: "GET",
-        contentType: "application/json;charset=utf-8",
-        dataType: "json",
-        success: function (result) {
-            var htmlSelect = '';
-            $.each(result, function (key, item) {
-                htmlSelect += '<option value="' + item.id + '">' + item.name + '</option>';
-            });
-            $("#course").append(htmlSelect);
 
-        },
-        error: function (errorMessage) {
-            configureToastr();
-            toastr.error("Ha ocurrido un error al obtener los cursos.");
-        }
-    });
-
-}
-
-function AddAppointment() {
-
-    configureToastr();
-
-    const userId = localStorage.getItem("userId");
-
-    var appointment = {
-        date: $('#datetime').val() + "T" + $('#time').val(),
-        mode: $('#mode').val(),
-        courseid: $('#course').val(),
-        userId,
-    };
-    var course = {
-        id: $('#course').val(),
-        name: $('#course').find('option:selected').text(),
-    };
-    var user = {
-        id: userId,
-    }
-    appointment.course = course;
-    appointment.user = user;
-    if (!$('#datetime').val()) {
-        toastr.error('Por favor, complete todos los campos correctamente.');
-    } else {
-        $.ajax({
-            url: "/Appointment/CreateNewAppointment",
-            data: JSON.stringify(appointment),
-            type: "POST",
-            contentType: "application/json;charset=utf-8",
-            dataType: "json",
-            success: function (result) {
-                $('#datetime').val('');
-                $("#mode").val(1);
-                $('#time').val('08:00')
-                toastr.success('Registrado con éxito');
-                GetAppointments();
-            },
-            error: function (errorMessage) {
-                toastr.error("Ha ocurrido un error al agendar la cita, por favor inténtelo más tarde");
-            }
-        });
-    }
-
-};
 //------------------------------------------------
 //---------ADVISEMENT SECTION---------------
 //------------------------------------------------

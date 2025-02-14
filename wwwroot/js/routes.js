@@ -39,11 +39,32 @@ function loadSection(section) {
 
     section.toLowerCase();
     //separar la sección del ID si existe
-    let [baseSection, id] = section.startsWith("view/newsdetails/")
-        ? ["view/newsdetails", section.split("/").slice(2).join("/")]
-        : section.startsWith("view/advisementdetails/")
-            ? ["view/advisementdetails", section.split("/").slice(2).join("/")]
-            : [section, null];
+    let baseSection, id;
+
+    switch (true) {
+        case section.startsWith("view/newsdetails/"):
+            baseSection = "view/newsdetails";
+            id = section.split("/").slice(2).join("/");
+            break;
+
+        case section.startsWith("view/advisementdetails/"):
+            baseSection = "view/advisementdetails";
+            id = section.split("/").slice(2).join("/");
+            break;
+
+        case section.startsWith("view/requestappointment/"):
+            baseSection = "view/requestappointment";
+            id = section.split("/").slice(2).join("/");
+            break;
+
+        default:
+            baseSection = section;
+            id = null;
+            break;
+    }
+
+
+
 
 
     toggleHeader();
@@ -62,40 +83,56 @@ function loadSection(section) {
             const sectionContent = tempDiv.querySelector("#main-content").innerHTML;
             mainContent.innerHTML = sectionContent;
 
-            if (baseSection === "view/news") {
-                LoadNewsItems();
-            }
-            if (baseSection === "view/appointment") {
-                GetAppointments();
-                GetCourses();
-            }
-            if (baseSection === "view/advisement") {
-                var userEmail = localStorage.getItem("email");
-                GetAdvisementsByUser(userEmail);
-                GetPublicAdvisements(userEmail); // paso email para filtrar y no traer mis consultas de nuevo
+            switch (baseSection) {
+                case "view/news":
+                    LoadNewsItems();
+                    break;
+
+                case "view/appointment":
+                    GetAppointmentsByDate();
+                    GetPendingAppointments();
+                    GetReviewedAppointments();
+                    break;
+
+                case "view/advisement":
+                    var userEmail = localStorage.getItem("email");
+                    GetAdvisementsByUser(userEmail);
+                    GetPublicAdvisements(userEmail); // paso email para filtrar y no traer mis consultas de nuevo
+                    break;
+
+                case "view/profile":
+                    GetUserData();
+                    break;
+
+                case "view/newsdetails":
+                    if (id) {
+                        LoadNewsDetail(id);
+                    }
+                    break;
+
+                case "view/advisementdetails":
+                    if (id) {
+                        GetAdvisementDetails(id);
+                    }
+                    break;
+
+                case "user/login":
+                    if (id) {
+                        setLoading(false);
+                    }
+                    break;
+                case "view/requestappointment":
+                    if (id) {
+                        LoadReviewedAppointment(id);
+                    }
+                    break;
+
+                default:
+                    // Opcional: manejar casos no contemplados
+                    console.warn("Sección no reconocida:", baseSection);
+                    break;
             }
 
-            if (baseSection === "view/profile") {
-                GetUserData();
-            }
-            if (baseSection === "view/newsdetails" && id) {
-                LoadNewsDetail(id);
-            }
-
-            if (baseSection === "view/advisementdetails" && id) {
-                GetAdvisementDetails(id);
-
-            }
-
-
-            if (baseSection === "view/advisementdetails" && id) {
-                GetAdvisementDetails(id);
-
-            }
-            if (baseSection === "user/login" && id) {
-
-                setLoading(false);
-            }
 
 
             history.pushState(null, "", `/${section}`); // Cambia la URL sin recargar

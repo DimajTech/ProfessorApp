@@ -1,0 +1,58 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<div>
+    <button class="filter-button" onclick="loadSection('view/appointment')">Back</button>
+</div>
+<section class="section-appointment">
+    <form class="form-appointment">
+        <h2 class="h2-appointment">Detalles Solicitud</h2>
+        <input type="text" name="id" id="id" hidden>
+        <div>
+            <label class="label-appointment" for="course">
+                Curso:
+            </label> 
+            <label class="label-secondary" id="course"></label>
+        </div>
+
+
+        <div>
+            <label class="label-appointment">Fecha:</label>
+            <label class="label-secondary" id="date"></label>
+        </div>
+
+        <div>
+            <label class="label-appointment">Hora:</label>
+            <label class="label-secondary" id="time"></label>
+
+        </div>
+        <div>
+            <label class="label-appointment">Estudiante:</label>
+            <label class="label-secondary" id="student"></label>
+        </div>
+
+        <div>
+            <label class="label-appointment">Modalidad:</label>
+            <label class="label-secondary" id="mode"></label>
+        </div>
+        <div>
+            <label class="label-appointment">Estado:</label>
+            <label class="label-secondary" id="status"></label>
+        </div>
+
+        <div>
+            <label class="label-appointment">Comentario:</label>
+            <textarea class="styled-textarea" placeholder="Escribe aquí..."></textarea>
+
+        </div>
+        <div style="display: flex; justify-content: center; gap: 10px;">
+            <button type="button" class="button button-registrar" onclick="AddAppointment()">Aceptar</button>
+            <button type="reset" class="button button-cancelar">Rechazar</button>
+        </div>
+
+        
+
+    </form>
+</section>
