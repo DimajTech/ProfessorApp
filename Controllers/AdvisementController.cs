@@ -17,7 +17,7 @@ namespace StudentApp.Controllers
 
             _logger = logger;
             _configuration = configuration;
-            API_URL = _configuration["EnvironmentVariables: API_URL"];
+            API_URL = _configuration["EnvironmentVariables:API_URL"];
             advisementDAO = new AdvisementDAO(_configuration);
         }
 
@@ -45,14 +45,14 @@ namespace StudentApp.Controllers
 
 
         [HttpGet]
-        public async Task<IActionResult> GetAdvisementById([FromQuery] string advisementId)
+        public async Task<IActionResult> GetAdvisementById([FromQuery] string id)
         {
             try
             {
                 using (var client = new HttpClient())
                 {
                   
-                    var response = await client.GetAsync($"{API_URL}/api/Advisement/GetAdvisementById/{advisementId}");
+                    var response = await client.GetAsync($"{API_URL}/api/Advisement/GetAdvisementById/{id}");
 
                     if (response.IsSuccessStatusCode)
                     {
@@ -75,16 +75,15 @@ namespace StudentApp.Controllers
             }
         }
 
-
         [HttpGet]
-        public async Task<IActionResult> GetAdvisementsByUser([FromQuery] string professorEmail)
+        public async Task<IActionResult> GetAdvisementsByUser([FromQuery] string email)
         {
             try
             {
                 using (var client = new HttpClient())
                 {
                    
-                    var response = await client.GetAsync($"{API_URL}/api/Advisement/GetMyAdvisements/{professorEmail}");
+                    var response = await client.GetAsync($"{API_URL}/api/Advisement/GetMyAdvisements/{email}");
 
                     if (response.IsSuccessStatusCode)
                     {
@@ -107,15 +106,18 @@ namespace StudentApp.Controllers
             }
         }
 
+
+
+
         [HttpGet]
-        public async Task<IActionResult> GetPublicAdvisements([FromQuery] string professorEmail)
+        public async Task<IActionResult> GetPublicAdvisements([FromQuery] string email)
         {
             try
             {
                 using (var client = new HttpClient())
                 {
                
-                    var response = await client.GetAsync($"{API_URL}/api/Advisement/GetPublicAdvisements/{professorEmail}");
+                    var response = await client.GetAsync($"{API_URL}/api/Advisement/GetPublicAdvisements/{email}");
 
                     if (response.IsSuccessStatusCode)
                     {
@@ -137,6 +139,7 @@ namespace StudentApp.Controllers
                 return StatusCode(500, new { message = "Unexpected error", error = e.Message });
             }
         }
+
 
         public IActionResult GetAdvisementResponsesById(string id)
         {
