@@ -32,5 +32,6 @@
         public bool IsPublic { get => isPublic; set => isPublic = value; }
         public User User { get => user; set => user = value; }
         public DateTime CreatedAt { get => createdAt; set => createdAt = value; }
+
     }
 }

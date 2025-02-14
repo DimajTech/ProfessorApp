@@ -415,25 +415,25 @@ function GetAdvisementsByUser(email) {
         contentType: "application/json;charset=utf-8",
         dataType: "json",
         success: function (result) {
-
-            setLoading(false);
-
+            console.log(result); // Verifica la estructura de los datos
             var userHtmlTable = '';
             $.each(result, function (key, item) {
                 userHtmlTable += '<tr>';
                 userHtmlTable += '<td>' + item.course.code + '</td>';
                 userHtmlTable += '<td>' + item.user.name + '</td>';
                 userHtmlTable += '<td>' + new Date(item.createdAt).toLocaleDateString() + '</td>';
-                userHtmlTable += `<td><button class="btn btn-info" style="color:white; background-color:#66c5e3;" onclick="loadSection('view/advisementdetails/${item.id}')">Ver más</button></td>`;
+                userHtmlTable += `<td><button class="btn btn-info" onclick="loadSection('view/advisementdetails/${item.id}')">Ver más</button></td>`;
                 userHtmlTable += '</tr>';
             });
 
             $('#user-advisements').html(userHtmlTable);
 
+            setLoading(false);
+
         },
         error: function (errorMessage) {
             configureToastr();
-            toastr.error(errorMessage.responseText);
+            toastr.error(errorMessage.responseJSON?.message || errorMessage.responseText || "Ocurrió un error inesperado.");
             setLoading(false);
 
         }
@@ -451,8 +451,7 @@ function GetPublicAdvisements(email) {
         contentType: "application/json;charset=utf-8",
         dataType: "json",
         success: function (result) {
-           
-            setLoading(false);
+
 
             var publicHtmlTable = '';
             $.each(result, function (key, item) {
@@ -460,7 +459,7 @@ function GetPublicAdvisements(email) {
                 publicHtmlTable += '<td>' + item.course.code + '</td>';
                 publicHtmlTable += '<td>' + item.user.name + '</td>';
                 publicHtmlTable += '<td>' + new Date(item.createdAt).toLocaleDateString() + '</td>';
-                publicHtmlTable += `<td><button class="btn btn-info" style="color:white; background-color:#66c5e3;" onclick="loadSection('view/advisementdetails/${item.id}')">Ver más</button></td>`;
+                publicHtmlTable += `<td><button class="btn btn-info" onclick="loadSection('view/advisementdetails/${item.id}')">Ver más</button></td>`;
                 publicHtmlTable += '</tr>';
             });
 
@@ -469,7 +468,7 @@ function GetPublicAdvisements(email) {
         },
         error: function (errorMessage) {
             configureToastr();
-            toastr.error(errorMessage.responseText);
+            toastr.error(errorMessage.responseJSON?.message || errorMessage.responseText || "Ocurrió un error inesperado.");
             setLoading(false);
 
         }
@@ -512,7 +511,7 @@ function GetAdvisementDetails(id) {
         },
         error: function (errorMessage) {
             configureToastr();
-            toastr.error(errorMessage.responseText);
+            toastr.error(errorMessage.responseJSON?.message || errorMessage.responseText || "Ocurrió un error inesperado.");
             setLoading(false);
         }
     });

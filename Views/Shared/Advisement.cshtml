@@ -1,8 +1,6 @@
 ﻿<section class="section-advisements" id="advisements">
     <div class="container">
-        <div class="d-flex justify-content-end mb-3">
-            <button class="btn btn-success" onclick="ShowCreateAdvisementForm()" style="color:white; background-color:#28a745; border:none;">+ Crear nueva consulta</button>
-        </div>
+       
 
         <h3>Mis consultas</h3>
         <table class="table table-striped">
@@ -39,47 +37,4 @@
 </section>
 
 
-
-<!-- Sección para crear consulta, permanece oculta -->
-
-<section id="create-advisement" style="display: none; margin: 80px;">
-    <div class="w3-container w3-card w3-padding">
-        <div class="row">
-            <button onclick="loadSection('view/advisement')" class="button-news">
-                ← Volver
-            </button>
-            <div class="section-title-create-advisement text-center mb-4">
-                <h2>Crear consulta</h2>
-            </div>
-
-            <form class="form-advisement">
-                <!-- Selección de Curso -->
-                <div class="mb-3">
-                    <label for="course" class="form-label">Curso:</label>
-                    <select id="advisement-course-select" class="form-select">
-                        <option value="0" selected>Seleccione un curso</option>
-                    </select>
-                </div>
-
-                <!-- Mensaje -->
-                <div class="mb-3">
-                    <label for="advisement-content" class="form-label">Mensaje:</label>
-                    <textarea id="advisement-content" class="form-control" rows="4" placeholder="Escribe tu consulta aquí..."></textarea>
-                </div>
-
-                <!-- Checkbox para consulta pública -->
-                <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="publicCheck">
-                    <label class="form-check-label" for="publicCheck">Consulta pública</label>
-                </div>
-
-                <!-- Botones -->
-                <div class="d-flex gap-2">
-                    <button type="button" class="btn btn-primary w-50" onclick="AddAdvisement()" style="color:white; background-color:#28a745; border:none;">Enviar</button>
-                    <button type="reset" class="btn btn-secondary w-50" onclick="CancelCreateAdvisement()" style="color:white; background-color:#dc3545; border:none;">Cancelar</button>
-                </div>
-            </form>
-        </div>
-    </div>
-
-</section>
+<!--Falta seccion de ver detalles donde iria la accion responder  -->
