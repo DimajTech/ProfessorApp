@@ -50,7 +50,7 @@ function AuthenticateUser() {
         data: { email, password },
         success: function (response) {
             if (response.success) {
-
+                
                 localStorage.setItem("email", email);
                 localStorage.setItem("role", response.role);
                 localStorage.setItem("userId", response.userId);
@@ -135,6 +135,9 @@ function Add() {
 //Filter
 //TODO: Hacer que al inicio no muestre un "No se encontraron citas"
 function GetAppointmentsByDate() {
+
+    setLoading(true)
+
     const userId = localStorage.getItem("userId");
 
     let today = new Date().toISOString().split('T')[0];
@@ -185,11 +188,16 @@ function GetAppointmentsByDate() {
                 htmlTable += '</tr>';
             });
 
+
             $('#dailyappointments-tbody').html(htmlTable);
+            setLoading(false)
+
         },
         error: function () {
             configureToastr();
             toastr.error("Error al obtener citas.");
+            setLoading(false)
+
         }
     });
 }
@@ -288,52 +296,65 @@ function UpdateAppointment(appointmentId, isAccepted) {
     var text = ($('#appointment-details-text-area').val() || "").trim();
 
     if (text.length > 0) {
-        $("#appointment-details-text-area").css("border-color", "black");
 
-        const userID = localStorage.getItem("userId");
+        Swal.fire({
+            text: "¿Deseas guardar los cambios realizados?",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Sí, guardar',
+            cancelButtonText: 'Cancelar'
+        }).then((result) => {
+            if (result.isConfirmed) {
 
-        var updatedAppointment = {
-            id: appointmentId,
-            status: isAccepted ? "accepted" : "denied",
-            professorComment: text,
-            user: {
-                id: userID
-            }
-        };
+                $("#appointment-details-text-area").css("border-color", "black");
 
-        setLoading(true);
-        $.ajax({
-            url: "/Appointment/UpdateAppointment",
-            type: "PUT",
-            data: JSON.stringify(updatedAppointment),
-            contentType: "application/json;charset=utf-8",
-            dataType: "json",
-            success: function (result) {
+                const userID = localStorage.getItem("userId");
 
-                if (result.success) {
-                    toastr.options.positionClass = 'toast-bottom-right';
-                    toastr.success('Cambos registrados con éxito');
-                    loadSection("view/appointment")
+                var updatedAppointment = {
+                    id: appointmentId,
+                    status: isAccepted ? "accepted" : "denied",
+                    professorComment: text,
+                };
 
-                } else {
+                setLoading(true);
+                $.ajax({
+                    url: "/Appointment/UpdateAppointment",
+                    type: "PUT",
+                    data: JSON.stringify(updatedAppointment),
+                    contentType: "application/json;charset=utf-8",
+                    dataType: "json",
+                    success: function (result) {
 
-                    toastr.options.positionClass = 'toast-bottom-right';
-                    toastr.error(result.message);
-                }
+                        if (result.success) {
+                            toastr.options.positionClass = 'toast-bottom-right';
+                            toastr.success('Cambos registrados con éxito');
+                            loadSection("view/appointment")
+
+                        } else {
+
+                            toastr.options.positionClass = 'toast-bottom-right';
+                            toastr.error(result.message);
+                        }
 
 
-                setLoading(false);
-            },
-            error: function (errorMessage) {
-                console.log(errorMessage.responseText);
+                        setLoading(false);
+                    },
+                    error: function (errorMessage) {
+                        console.log(errorMessage.responseText);
 
-                toastr.options.positionClass = 'toast-bottom-right';
-                toastr.error('Ha ocurrido un error al agregar los cambios, intente de nuevo más tarde.');
+                        toastr.options.positionClass = 'toast-bottom-right';
+                        toastr.error('Ha ocurrido un error al agregar los cambios, intente de nuevo más tarde.');
 
-                setLoading(false);
+                        setLoading(false);
+
+                    }
+                });
 
             }
         });
+       
     } else {
 
         toastr.options.positionClass = 'toast-bottom-right';

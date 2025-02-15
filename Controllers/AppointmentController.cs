@@ -137,7 +137,12 @@ namespace StudentApp.Controllers
                 using (var client = new HttpClient())
                 {
                     client.BaseAddress = new Uri($"{API_URL}/api/Appointment/");
-                    var putTask = client.PutAsJsonAsync("PutAppointment/", appointment);
+                    var putTask = client.PutAsJsonAsync("PutAppointment/", new {
+                        appointment.Id,
+                        appointment.Status,
+                        appointment.ProfessorComment
+                    });
+
                     putTask.Wait();
 
                     var result = putTask.Result;
