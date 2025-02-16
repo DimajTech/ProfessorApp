@@ -21,7 +21,7 @@
             <div class="profile-main-div">
                 <label class="">Correo electrónico</label>
                 <input id="p-email" class="profile-input" type="email" value="" readonly>
-                <p id="email-warning" style="color: red; margin-bottom: 30px;" hidden>*El correo electrónico no se puede editar</p>
+                <p id="email-warning" style="color: #dc3545; margin-bottom: 30px;" hidden>*El correo electrónico no se puede editar</p>
             </div>
 
             <div class="profile-main-div">
@@ -45,12 +45,12 @@
             </div>
 
             <div class="p-buttons-row">
-                <button id="p-button" class="profile-button" onclick="HandleEditing()">Editar</button>
-                <button id="p-cancel-button" class="p-red-button" onclick="CancelEditing()" hidden style="background-color:#dc3545">Cancelar</button>
+                <button id="p-button" class="general-button-white" onclick="HandleEditing()">Editar</button>
+                <button id="p-cancel-button" class="general-button-red" onclick="CancelEditing()" hidden style="">Cancelar</button>
             </div>
 
             <div class="p-div-delete-button" style="justify-content:center;">
-                <button id="p-delete-button" class="p-red-button" onclick="DeleteAccount()" style="background-color:#dc3545">Eliminar cuenta</button>
+                <button id="p-delete-button" class="general-button-red" onclick="DeleteAccount()" style="background-color:#dc3545">Eliminar cuenta</button>
             </div>
         </div>
     </div>
