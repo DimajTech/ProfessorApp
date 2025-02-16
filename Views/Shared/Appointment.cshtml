@@ -5,30 +5,22 @@
 }
 
 
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="~/css/templatemo-scholar.css">
+<section style="margin-top:50px">
 
-
-
-
-<section id="myAppointments-daily" style="margin: 80px">
-
-    <div class="w3-container-appointment">
+    <div class="w3-container">
         <div class="row">
-            <div class="section-title-appointment">
-                <h2>Mis citas</h2>
+                <h2 style="margin-bottom:20px">Mis Citas</h2>
                 <div>
-                    <label class="label-appointment" ">Fecha:</label>
+                    <label>Fecha:</label>
                     <input type="date" id="datetime" class="input-appointment" style="width:auto" />
-                    <button type="button" class="filter-button" onclick="GetAppointmentsByDate()" style="background-color: #66c5e3 !important">Filtrar</button>
+                <button type="button" class="general-button" onclick="GetAppointmentsByDate()" style="background-color: #66c5e3 !important">Filtrar</button>
                 </div>
-            </div>
 
             <div class="col-md-12 col-sm-12">
 
-                <div class="table-responsive-appointment">
+                <div class="table-responsive-general">
 
-                    <table class="w3-table-all-appointment" id="dailyappointments-table">
+                    <table class="w3-table-all-general" id="dailyappointments-table">
 
                         <thead>
 
@@ -67,7 +59,9 @@
                         </tbody>
 
                     </table>
+
                     <p id="noDailyAppointmentsMessage1" style="display: none;">No se encontraron citas registradas para ese día</p>
+
                 </div>
             </div>
 
@@ -78,18 +72,16 @@
 
 
 
-<section id="myAppointments-request" style="margin: 80px">
-    <div class="w3-container-appointment">
+<section>
+    <div class="w3-container">
         <div class="row">
-            <div class="section-title-appointment">
-                <h2>Solicitudes pendientes</h2>
-            </div>
+            <h2 style="margin-bottom:20px">Solicitudes pendientes</h2>
 
             <div class="col-md-12 col-sm-12">
 
-                <div class="table-responsive-appointment">
+                <div class="table-responsive-general">
 
-                    <table class="w3-table-all-appointment" id="requestappointments-table">
+                    <table class="w3-table-all-general" id="requestappointments-table">
 
                         <thead>
 
@@ -139,18 +131,16 @@
     </div>
 </section>
 
-<section id="myAppointments-appointment" style="margin: 80px">
-    <div class="w3-container-appointment">
+<section>
+    <div class="w3-container">
         <div class="row">
-            <div class="section-title-appointment">
-                <h2>Revisadas</h2>
-            </div>
+            <h2 style="margin-bottom:20px">Revisadas</h2>
 
             <div class="col-md-12 col-sm-12">
 
-                <div class="table-responsive-appointment">
+                <div class="table-responsive-general">
 
-                    <table class="w3-table-all-appointment" id="myappointments-table">
+                    <table class="w3-table-all-general" id="myappointments-table">
 
                         <thead>
 
@@ -189,6 +179,7 @@
                         </tbody>
 
                     </table>
+
                 </div>
             </div>
 

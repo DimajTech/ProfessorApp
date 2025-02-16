@@ -21,6 +21,9 @@ $(document).ready(() => {
         AddPieceOfNews();
     });
 
+
+
+
 });
 
 
@@ -154,7 +157,6 @@ function GetAppointmentsByDate() {
         state: "accepted" 
     };
 
-    console.log(appointmentFilter);
 
     $.ajax({
         url: "/Appointment/GetAppointments",
@@ -190,6 +192,8 @@ function GetAppointmentsByDate() {
 
 
             $('#dailyappointments-tbody').html(htmlTable);
+            setupPagination("dailyappointments-tbody");
+
             setLoading(false)
 
         },
@@ -238,11 +242,15 @@ function GetPendingAppointments() {
                 htmlTable += '<td>' + (item.user?.email || 'Sin email') + '</td>';
                 htmlTable += '<td>' + (item.course?.name || 'Desconocido') + '</td>';
                 htmlTable += '<td>' + (item.professorComment || 'Sin comentarios') + '</td>';
-                htmlTable += `<td><a class="filter-button"  style="background-color: #66c5e3 !important" onclick="loadSection('view/requestappointment/${item.id}')">Revisar</a></td>`;
+                htmlTable += `<td><a class="general-button"  onclick="loadSection('view/requestappointment/${item.id}')">Revisar</a></td>`;
                 htmlTable += '</tr>';
             });
 
+
             $('#myrequest-tbody').html(htmlTable);
+            setupPagination("myrequest-tbody");
+
+
         },
         error: function () {
             configureToastr();
@@ -273,8 +281,8 @@ function LoadAppointmentDetails(id) {
 
             htmlBtns = `        
                     <div style="display: flex; justify-content: center; gap: 10px;">
-                    <button type="button" class="button button-registrar" onclick="UpdateAppointment('${result.id}', true)">Aceptar</button>
-                    <button type="reset" class="button button-cancelar" onclick="UpdateAppointment('${result.id}', false)">Rechazar</button>
+                    <button type="button" class="general-button-green" onclick="UpdateAppointment('${result.id}', true)">Aceptar</button>
+                    <button type="reset" class="general-button-red" onclick="UpdateAppointment('${result.id}', false)">Rechazar</button>
                     </div>
                         `
             $("#appointment-details-container").append(htmlBtns);
@@ -301,8 +309,8 @@ function UpdateAppointment(appointmentId, isAccepted) {
             text: "¿Deseas guardar los cambios realizados?",
             icon: 'warning',
             showCancelButton: true,
-            confirmButtonColor: '#3085d6',
-            cancelButtonColor: '#d33',
+            confirmButtonColor: '#4caf50',
+            cancelButtonColor: '#dc3545',
             confirmButtonText: 'Sí, guardar',
             cancelButtonText: 'Cancelar'
         }).then((result) => {
@@ -369,7 +377,6 @@ function UpdateAppointment(appointmentId, isAccepted) {
 //trae rechazadas y pendientes
 function GetReviewedAppointments() {
     const userId = localStorage.getItem("userId");
-    var professorId = userId;
 
     $.ajax({
         url: "/Appointment/GetReviewedAppointments/" + userId,
@@ -383,6 +390,7 @@ function GetReviewedAppointments() {
 
             $('#myappointments-table').show();
             $('#noDailyAppointmentsMessage3').hide();
+
             var htmlTable = '';
             $.each(result, function (key, item) {
                 const [fecha, hora] = item.date.split('T');
@@ -400,13 +408,17 @@ function GetReviewedAppointments() {
             });
 
             $('#myappointments-tbody').html(htmlTable);
+            setLoading(false);
+            setupPagination("myappointments-tbody");
         },
         error: function () {
             configureToastr();
             toastr.error("Error al obtener citas revisadas.");
+            setLoading(false);
         }
     });
 }
+
 
 
 
@@ -421,7 +433,7 @@ function AddNewResponse(advisementId) {
 
 
     var text = ($('#response-text-area').val() || "").trim();
-
+    
     if (text.length > 0) {
         $("#response-text-area").css("border-color", "black");
 
@@ -561,11 +573,12 @@ function GetAdvisementsByUser(email) {
                 userHtmlTable += '<td>' + item.course.code + '</td>';
                 userHtmlTable += '<td>' + item.user.name + '</td>';
                 userHtmlTable += '<td>' + new Date(item.createdAt).toLocaleDateString() + '</td>';
-                userHtmlTable += `<td><button class="btn btn-info" style="background-color: #66c5e3 !important; color: white;" onclick="loadSection('view/advisementdetails/${item.id}')">Ver más</button></td>`;
+                userHtmlTable += `<td><button class="general-button" onclick="loadSection('view/advisementdetails/${item.id}')">Ver más</button></td>`;
                 userHtmlTable += '</tr>';
             });
 
             $('#user-advisements').html(userHtmlTable);
+            setupPagination("user-advisements")
 
             setLoading(false);
 
@@ -598,11 +611,12 @@ function GetPublicAdvisements(email) {
                 publicHtmlTable += '<td>' + item.course.code + '</td>';
                 publicHtmlTable += '<td>' + item.user.name + '</td>';
                 publicHtmlTable += '<td>' + new Date(item.createdAt).toLocaleDateString() + '</td>';
-                publicHtmlTable += `<td><button class="btn btn-info"  style="background-color: #66c5e3 !important; color: white;" onclick="loadSection('view/advisementdetails/${item.id}')">Ver más</button></td>`;
+                publicHtmlTable += `<td><button class="general-button"  onclick="loadSection('view/advisementdetails/${item.id}')">Ver más</button></td>`;
                 publicHtmlTable += '</tr>';
             });
 
             $('#public-advisements').html(publicHtmlTable);
+            setupPagination("public-advisements")
 
         },
         error: function (errorMessage) {
@@ -818,8 +832,8 @@ function HandleEditing() {
                 text: "¿Deseas guardar los cambios realizados?",
                 icon: 'warning',
                 showCancelButton: true,
-                confirmButtonColor: '#3085d6',
-                cancelButtonColor: '#d33',
+                confirmButtonColor: '#4caf50',
+                cancelButtonColor: '#dc3545',
                 confirmButtonText: 'Sí, guardar',
                 cancelButtonText: 'Cancelar'
             }).then((result) => {
@@ -952,8 +966,8 @@ function DeleteAccount() {
         text: "¿Seguro de que deseas eliminar la cuenta?",
         icon: 'warning',
         showCancelButton: true,
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
+        confirmButtonColor: '#4caf50',
+        cancelButtonColor: '#dc3545',
         confirmButtonText: 'Sí, eliminar',
         cancelButtonText: 'Cancelar'
     }).then((result) => {
