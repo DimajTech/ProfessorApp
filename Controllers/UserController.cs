@@ -154,18 +154,7 @@ namespace StudentApp.Controllers
                 {
                     client.BaseAddress = new Uri($"{API_URL}/api/User/");
 
-                    var newValues = new UpdateProfessorRequestDTO
-                    {
-                        id = user.Id,
-                        name = user.Name,
-                        picture = user.Picture,
-                        description = user.Description,
-                        linkedin = user.LinkedIn,
-                        professionalBackground = user.ProfessionalBackground,
-                        password = user.Password
-                    };
-
-                    var putTask = client.PutAsJsonAsync("PutUser/" + user.Id, newValues);
+                    var putTask = client.PutAsJsonAsync("PutUser/" + user.Id, user);
                     putTask.Wait();
 
                     var result = putTask.Result;
