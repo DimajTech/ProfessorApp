@@ -1782,19 +1782,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\daniv\\.nuget\\packages\\": {}
+    "C:\\Users\\Esteban\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\daniv\\source\\repos\\ProfessorApp\\ProfessorApp.csproj",
+      "projectUniqueName": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\ProfessorApp.csproj",
       "projectName": "ProfessorApp",
-      "projectPath": "C:\\Users\\daniv\\source\\repos\\ProfessorApp\\ProfessorApp.csproj",
-      "packagesPath": "C:\\Users\\daniv\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\daniv\\source\\repos\\ProfessorApp\\obj\\",
+      "projectPath": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\ProfessorApp.csproj",
+      "packagesPath": "C:\\Users\\Esteban\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Esteban\\Documents\\UCR\\Tercer año\\III Semestre\\Lenguajes para Aplicaciones Comerciales\\Proyecto\\ProfessorApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\daniv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Esteban\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

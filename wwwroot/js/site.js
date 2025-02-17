@@ -925,7 +925,7 @@ function EditUser() {
             CancelEditing();
         }
     });
-    
+
 }
 
 function CancelEditing() {
