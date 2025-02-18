@@ -9,71 +9,67 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ProfessorApp
 build_property.RootNamespace = ProfessorApp
-build_property.ProjectDir = C:\Users\Esteban\Documents\UCR\Tercer año\III Semestre\Lenguajes para Aplicaciones Comerciales\Proyecto\ProfessorApp\
+build_property.ProjectDir = C:\Users\daniv\source\repos\ProfessorApp\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Esteban\Documents\UCR\Tercer año\III Semestre\Lenguajes para Aplicaciones Comerciales\Proyecto\ProfessorApp
+build_property.MSBuildProjectDirectory = C:\Users\daniv\source\repos\ProfessorApp
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Esteban/Documents/UCR/Tercer año/III Semestre/Lenguajes para Aplicaciones Comerciales/Proyecto/ProfessorApp/Views/Home/Index.cshtml]
+[C:/Users/daniv/source/repos/ProfessorApp/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Esteban/Documents/UCR/Tercer año/III Semestre/Lenguajes para Aplicaciones Comerciales/Proyecto/ProfessorApp/Views/Home/Privacy.cshtml]
+[C:/Users/daniv/source/repos/ProfessorApp/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Esteban/Documents/UCR/Tercer año/III Semestre/Lenguajes para Aplicaciones Comerciales/Proyecto/ProfessorApp/Views/Shared/Advisement.cshtml]
+[C:/Users/daniv/source/repos/ProfessorApp/Views/Shared/Advisement.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEFkdmlzZW1lbnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Esteban/Documents/UCR/Tercer año/III Semestre/Lenguajes para Aplicaciones Comerciales/Proyecto/ProfessorApp/Views/Shared/AdvisementDetails.cshtml]
+[C:/Users/daniv/source/repos/ProfessorApp/Views/Shared/AdvisementDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEFkdmlzZW1lbnREZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Esteban/Documents/UCR/Tercer año/III Semestre/Lenguajes para Aplicaciones Comerciales/Proyecto/ProfessorApp/Views/Shared/Appointment.cshtml]
+[C:/Users/daniv/source/repos/ProfessorApp/Views/Shared/Appointment.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEFwcG9pbnRtZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Esteban/Documents/UCR/Tercer año/III Semestre/Lenguajes para Aplicaciones Comerciales/Proyecto/ProfessorApp/Views/Shared/Error.cshtml]
+[C:/Users/daniv/source/repos/ProfessorApp/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Esteban/Documents/UCR/Tercer año/III Semestre/Lenguajes para Aplicaciones Comerciales/Proyecto/ProfessorApp/Views/Shared/Login.cshtml]
+[C:/Users/daniv/source/repos/ProfessorApp/Views/Shared/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXExvZ2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Esteban/Documents/UCR/Tercer año/III Semestre/Lenguajes para Aplicaciones Comerciales/Proyecto/ProfessorApp/Views/Shared/News.cshtml]
+[C:/Users/daniv/source/repos/ProfessorApp/Views/Shared/News.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE5ld3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Esteban/Documents/UCR/Tercer año/III Semestre/Lenguajes para Aplicaciones Comerciales/Proyecto/ProfessorApp/Views/Shared/NewsDetails.cshtml]
+[C:/Users/daniv/source/repos/ProfessorApp/Views/Shared/NewsDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE5ld3NEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Esteban/Documents/UCR/Tercer año/III Semestre/Lenguajes para Aplicaciones Comerciales/Proyecto/ProfessorApp/Views/Shared/Profile.cshtml]
+[C:/Users/daniv/source/repos/ProfessorApp/Views/Shared/Profile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFByb2ZpbGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Esteban/Documents/UCR/Tercer año/III Semestre/Lenguajes para Aplicaciones Comerciales/Proyecto/ProfessorApp/Views/Shared/RequestAppointment.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFJlcXVlc3RBcHBvaW50bWVudC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Esteban/Documents/UCR/Tercer año/III Semestre/Lenguajes para Aplicaciones Comerciales/Proyecto/ProfessorApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/daniv/source/repos/ProfessorApp/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Esteban/Documents/UCR/Tercer año/III Semestre/Lenguajes para Aplicaciones Comerciales/Proyecto/ProfessorApp/Views/_ViewImports.cshtml]
+[C:/Users/daniv/source/repos/ProfessorApp/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Esteban/Documents/UCR/Tercer año/III Semestre/Lenguajes para Aplicaciones Comerciales/Proyecto/ProfessorApp/Views/_ViewStart.cshtml]
+[C:/Users/daniv/source/repos/ProfessorApp/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Esteban/Documents/UCR/Tercer año/III Semestre/Lenguajes para Aplicaciones Comerciales/Proyecto/ProfessorApp/Views/Shared/_Layout.cshtml]
+[C:/Users/daniv/source/repos/ProfessorApp/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-eg50c903ea
