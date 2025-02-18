@@ -497,7 +497,6 @@ function LoadAdvisementResponses(advisementId) {
         contentType: "application/json;charset=utf-8",
         success: function (advisementResponses) {
 
-
             //Caja para comentar
             var htmlContent = ``;
             $("#commentsContainer>").html(`<div class="loader"></div>`);
@@ -521,6 +520,7 @@ function LoadAdvisementResponses(advisementId) {
             //Comentarios
             advisementResponses.forEach(response => {
 
+                console.log(response);
 
                 index++;
                 htmlContent += `
@@ -531,7 +531,7 @@ function LoadAdvisementResponses(advisementId) {
                                 <span class="comment-role">(${response.user.role})</span>
                             </div>
                            
-                            <span class="comment-date">${new Date(response.dateTime).toLocaleString()}</span>
+                            <span class="comment-date">${new Date(response.date).toLocaleString()}</span>
                         </div>
                         <div class="comment-body">
                             <p>${response.text}</p>
@@ -566,7 +566,6 @@ function GetAdvisementsByUser(email) {
         contentType: "application/json;charset=utf-8",
         dataType: "json",
         success: function (result) {
-            console.log(result); // Verifica la estructura de los datos
             var userHtmlTable = '';
             $.each(result, function (key, item) {
                 userHtmlTable += '<tr>';
