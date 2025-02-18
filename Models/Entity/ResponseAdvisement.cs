@@ -17,7 +17,7 @@
         public string Id { get => id; set => id = value; }
         public string AdvisementId { get => advisementId; set => advisementId = value; }
         public string Text { get => text; set => text = value; }
-        public DateTime DateTime { get => date; set => date = value; }
+        public DateTime Date { get => date; set => date = value; }
         public User User { get => user; set => user = value; }
     }
 }

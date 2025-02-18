@@ -223,7 +223,7 @@ namespace StudentApp.Models.DAO
                     {
                         Id = reader["Id"].ToString(),
                         Text = reader["Text"].ToString(),
-                        DateTime = DateTime.Parse(reader["Date"].ToString()),
+                        Date = DateTime.Parse(reader["Date"].ToString()),
                         User = new User(null, reader["Name"].ToString(), null, null, reader["Role"].ToString()),
                     });
                 }
