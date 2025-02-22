@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
+using ProfessorApp.DTO;
 using StudentApp.Models.DAO;
 using StudentApp.Models.Entity;
 
@@ -152,6 +153,7 @@ namespace StudentApp.Controllers
                 using (var client = new HttpClient())
                 {
                     client.BaseAddress = new Uri($"{API_URL}/api/User/");
+
                     var putTask = client.PutAsJsonAsync("PutUser/" + user.Id, user);
                     putTask.Wait();
 
@@ -184,6 +186,50 @@ namespace StudentApp.Controllers
             }
 
         }
+
+
+        /*
+        [HttpPut]
+        public async Task<IActionResult> UpdateUser([FromBody] UpdateProfessorRequestDTO newValues)
+        {
+            try
+            {
+                using (var client = new HttpClient())
+                {
+                    client.BaseAddress = new Uri($"{API_URL}/api/User/");
+                    var putTask = client.PutAsJsonAsync("PutUser/" + newValues.id, newValues);
+                    putTask.Wait();
+
+                    var result = putTask.Result;
+
+                    if (result.IsSuccessStatusCode)
+                    {
+                        var updatedUser = await result.Content.ReadFromJsonAsync<User>();
+                        return Json(new
+                        {
+                            success = true,
+                            user = updatedUser
+                        });
+                    }
+                    else
+                    {
+                        var errorContent = await result.Content.ReadAsStringAsync();
+                        return Json(new
+                        {
+                            success = false,
+                            message = "No se pudo actualizar el usuario",
+                            details = errorContent
+                        });
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
+
+        }
+        */
 
 
         [HttpDelete]
